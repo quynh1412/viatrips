@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Coolvetica-R' ;
+  src: url(../fonts/coolvetica\ rg.otf);
+}
 /*-----------------------------BREADCRUMB----------------------------*/
 /* breadcrumb */
 .breadcrumb-container .breadcrumb {
@@ -805,10 +809,20 @@ input:focus {
 /*BANNER 2*/
 #banner2 {
   margin-top: 40px;
-  background-image: url(../imgs/imgs-CheckOut/Checkout-Banner2.png);
+  background-image: url(../imgs/imgs-CheckOut/Banner2-CheckOut.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 300px;
+}
+.textbanner2 p {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 700;
+  padding-top: 100px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.imgbird {
+  float: right;
 }
 
 /*-----RESPONSIVE---*/
@@ -870,6 +884,16 @@ input:focus {
 #tourinfofill {
   margin-top: 32px;
 }
+.bill-container {
+  margin-top: 32px;
+}
+.textbanner2 p {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 700;
+  padding-top: 100px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
 }
 /*SM*/
 @media (min-width:576px) and (max-width:767px) {
@@ -910,7 +934,16 @@ input:focus {
 #tourinfofill {
   margin-top: 24px;
 }
-
+.bill-container {
+  margin-top: 24px;
+}
+.textbanner2 p {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  padding-top: 100px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
 }
 /*XS*/
 @media (max-width:575px) {
@@ -941,6 +974,15 @@ input:focus {
   margin-top: 24px;
 }
 
+.bill-container {
+  margin-top: 24px;
+}
+.textbanner2 p {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  padding-top: 100px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 
-
+}
 }

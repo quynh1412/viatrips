@@ -9,7 +9,7 @@
 
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
 
 
 
@@ -26,9 +26,9 @@
 
 
 
-   <!-- js navbar -->
-   
-   <script>
+  <!-- js navbar -->
+
+  <script>
     function openNav() {
       $("#sidebarMobile").css("width", "256px");
       $("#overlay").css("display", "block");
@@ -55,6 +55,43 @@
     });
   </script> <!-- js navbar -->
 
+  <script>
+    var countDownDate = new Date().getTime() + 120 * 60 * 1000;
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      if (hours < 10) {
+        hours = '0' + hours;
+      }
+      if (minutes < 10) {
+        minutes = '0' + minutes;
+      }
+      if (seconds < 10) {
+        seconds = '0' + seconds;
+      }
+      // Display the result in the element with id="demo"
+      document.getElementById("clock").innerHTML = hours + " : "
+        + minutes + " : " + seconds;
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("clock").innerHTML = "00 : 00 : 00";
+      }
+    }, 1000);
+  </script>
+
 </head>
 
 <body>
@@ -77,6 +114,7 @@
               <a class="dropdown-item" href="#">Summer tour</a>
               <a class="dropdown-item" href="#">Autumn tour</a>
               <a class="dropdown-item" href="#">Winter tour</a>
+              <a class="dropdown-item-showall" href="Product.html">Show all</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -115,10 +153,11 @@
         <div class="dropdown-mobile">
           <a href="javascript:void(0)" class="dropdown-link"><span class="icon-tour sidebar-icon"></span>Tour</a>
           <div class="dropdown-mobile-content">
-            <a href="Detail.html">Spring tour</a>
-            <a href="#">Summer tour</a>
-            <a href="#">Autumn tour</a>
-            <a href="#">Winter tour</a>
+            <a class="dropdown-item-m" href="Detail.html">Spring tour</a>
+            <a class="dropdown-item-m" href="#">Summer tour</a>
+            <a class="dropdown-item-m" href="#">Autumn tour</a>
+            <a class="dropdown-item-m" href="#">Winter tour</a>
+            <a class="dropdown-item-showallm" href="Product.html">Show all</a>
           </div>
         </div>
         <div class="dropdown-mobile">
@@ -127,7 +166,7 @@
           <div class="dropdown-mobile-content">
             <a href="Plan.html">Your plan</a>
             <a href="#">Suggestion</a>
-            <a href="#">Plan a trip</a>
+            <a href="Plan.html">Plan a trip</a>
           </div>
         </div>
 
@@ -140,25 +179,25 @@
     </div>
   </div>
 
-<!-- breadcrumb -->
-<nav aria-label="breadcrumb" class="my-3">
-  <div class="container breadcrumb-container">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="Home.html"><span class="icon-home breadcrumb-icon"></span></a>
-      </li>
-      <li class="breadcrumb-item" aria-current="page">
-        <a href="#" aria-current="page">Tour</a>
-      </li>
-      <li class="breadcrumb-item" aria-current="page">
-        <a href="#" aria-current="page">Luna new year Tour</a>
-      </li>
-      <li class="breadcrumb-item active" aria-current="page">
-        Groupbooking
-      </li>
-    </ol>
-  </div>
-</nav>
+  <!-- breadcrumb -->
+  <nav aria-label="breadcrumb" class="my-3">
+    <div class="container breadcrumb-container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="Home.html"><span class="icon-home breadcrumb-icon"></span></a>
+        </li>
+        <li class="breadcrumb-item" aria-current="page">
+          <a href="#" aria-current="page">Tour</a>
+        </li>
+        <li class="breadcrumb-item" aria-current="page">
+          <a href="#" aria-current="page">Luna new year Tour</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Groupbooking
+        </li>
+      </ol>
+    </div>
+  </nav>
 
   <!-- title -->
   <div class="container title-container">
@@ -387,7 +426,7 @@
               <h3>DA NANG - HOI AN - HUE</h3>
               For 4 days 3 nights.
             </div>
-            <a href="Plan.html" class="w-100 makeaplan-btn">
+            <a href="Plan.html" class="w-100 btn primary-button makeaplan-btn">
               Make a plan</a>
             </button>
             <button type="button" class="btn btn-outline-primary primary-button w-100 plan-reminder-btn">
@@ -440,19 +479,20 @@
               <span class="total-text">Total</span>
               <span class="total-price">318,1$</span>
             </div>
-            <button type="button" class="btn btn-primary primary-button border-0 w-100 payment-btn">
+            <a href="Payment.html" alt=""><button type="button" class="btn btn-primary primary-button border-0 w-100 payment-btn">
               Payment
-            </button>
+            </button></a>
             <div class="bill-note">
               You need to fill in all the information before making the
               payment.
             </div>
             <div class="container">
-            <div class="row clock-container d-flex align-items-center">
-              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 col-6 clock-title">This link will close in:</div>
-              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 col-6 clock d-flex justify-content-center" id="clock">00 : 00 : 00</div>
+              <div class="row clock-container d-flex align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 col-6 clock-title">This link will close in:</div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 col-6 clock d-flex justify-content-center" id="clock">
+                  00 : 00 : 00</div>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
@@ -561,7 +601,7 @@
     </div>
   </div>
 
- 
+
   <!-- Footer -->
   <footer class="footer">
     <div class="d-md-none">
@@ -578,7 +618,7 @@
             <div class="card-body">
               <ul class="footer-link-items">
                 <li><a href="#">Our Story</a></li>
-                <li><a href="carrer.html">Carrers</a></li>
+                <li><a href="career.html">Career</a></li>
                 <li><a href="AboutUs.html">About us</a></li>
                 <li><a href="#">Contact us</a></li>
               </ul>
@@ -613,9 +653,9 @@
           <div id="information" class="collapse" aria-labelledby="headingInformation" data-parent="#footerCollapse">
             <div class="card-body">
               <ul class="footer-link-items">
-                <li><a href="#">Tour booking policy</a></li>
+                <li><a href="#">Booking policy</a></li>
                 <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Use</a></li>
+                <li><a href="TermsOfUse.html">Terms of Use</a></li>
                 <li><a href="FAQs.html">FAQs</a></li>
               </ul>
             </div>
@@ -629,7 +669,7 @@
           <h4 class="footer-title">About Viatrips</h4>
           <ul class="footer-link-items">
             <li><a href="#">Our Story</a></li>
-            <li><a href="carrer.html">Carrers</a></li>
+            <li><a href="career.html">Career</a></li>
             <li><a href="AboutUs.html">About us</a></li>
             <li><a href="#">Contact us</a></li>
           </ul>
@@ -646,9 +686,9 @@
         <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
           <h4 class="footer-title">Information</h4>
           <ul class="footer-link-items">
-            <li><a href="#">Tour booking policy</a></li>
+            <li><a href="#">Booking policy</a></li>
             <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
+            <li><a href="TermsOfUse.html">Terms of Use</a></li>
             <li><a href="FAQs.html">FAQs</a></li>
           </ul>
         </div>
@@ -742,10 +782,10 @@
     </header>
     <main class="chatbox-popup__main">
       <h5>15:30</h5>
-          <div id="message-chatbox">
-            <span>Hi there!<br>
-              Welcome to Viatrips's services. Please choose your desired departure point?</span>
-          </div>
+      <div id="message-chatbox">
+        <span>Hi there!<br>
+          Welcome to Viatrips's services. Please choose your desired departure point?</span>
+      </div>
       </div>
     </main>
     <footer class="chatbox-popup__footer">
@@ -782,11 +822,11 @@
           Welcome to Viatrips's services. Please choose your desired departure point?</span>
       </div>
 
-    <div id="message-btn-box">
-      <button class="btn primary-button" id="message-btn">The North</button>
-      <button class="btn primary-button" id="message-btn">The Central</button>
-      <button class="btn primary-button" id="message-btn">The South</button>
-  </div>
+      <div id="message-btn-box">
+        <button class="btn primary-button" id="message-btn">The North</button>
+        <button class="btn primary-button" id="message-btn">The Central</button>
+        <button class="btn primary-button" id="message-btn">The South</button>
+      </div>
     </main>
     <footer class="chatbox-panel__footer">
 
@@ -828,20 +868,20 @@
   </script> <!-- js chatbox -->
 
 
-<!-- js top btn -->
-<script>
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $("#scroll-to-top").fadeIn();
-    } else {
-      $("#scroll-to-top").fadeOut();
-    }
-  });
+  <!-- js top btn -->
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $("#scroll-to-top").fadeIn();
+      } else {
+        $("#scroll-to-top").fadeOut();
+      }
+    });
 
-  $("#scroll-to-top").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 500);
-  });
-</script> <!-- js top btn -->
+    $("#scroll-to-top").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 500);
+    });
+  </script> <!-- js top btn -->
 </body>
 
 </html>

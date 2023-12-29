@@ -234,6 +234,19 @@ color:black;
   object-fit: cover;
   border-radius: 8px;
 }
+.button-borderless {
+  color: black;
+  margin-right: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0px;
+  float: right;
+}
+.borderless-icon {
+  font-size: 24px;
+  color: #4340d8;
+  padding-top: 1px;
+}
 /* XL */
 @media (min-width:1200px) {
   .cardd{
@@ -250,6 +263,15 @@ color:black;
   }
   .cardd{
     height: 400px;
+  }
+  .description {
+    padding: 8px 0 0 0;
+    color: black;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    min-height: 88px;
   }
 }
 /* MD */
@@ -272,6 +294,15 @@ color:black;
     object-fit: cover;
     border-radius: 8px;
   }
+  .description {
+    padding: 8px 0 0 0;
+    color: black;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    min-height: 88px;
+  }
 }
 /* SM */
 @media (min-width:576px) and (max-width:767px) {
@@ -285,7 +316,7 @@ color:black;
     height: 440px;
   }
   .TitleExplore-Blog img {
-    margin-top: 24px;
+    margin-top: 8px;
   }
   .ContentReviews-Blogs img{
     padding-bottom: 24px;
@@ -325,5 +356,15 @@ color:black;
     margin-left: 18px;
     position: absolute;
   }
+  .description {
+    padding: 8px 0 0 0;
+    color: black;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    min-height: 72px;
+  }
+  
 }
   

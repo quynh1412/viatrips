@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Terms Of Use</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+  <!-- link css -->
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/icons.css" />
+  <link rel="stylesheet" href="css/TermCondition.css" />
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/bootstrap-4.4.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- js navbar -->
+  <script>
+    function openNav() {
+      $("#sidebarMobile").css("width", "256px");
+      $("#overlay").css("display", "block");
+    }
+
+    function closeNav() {
+      $("#sidebarMobile").css("width", "0");
+      $("#overlay").css("display", "none");
+      $(".dropdown-mobile a.active").each(function () {
+        $(this).parent().find(".dropdown-mobile-content").fadeOut()
+        $(this).removeClass("active");
+      });
+    }
+
+    $(document).ready(function () {
+      $(".dropdown-mobile a").click(function () {
+        $(this).parent().find(".dropdown-mobile-content").fadeToggle()
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+        } else {
+          $(this).addClass('active');
+        }
+      });
+    });
+  </script> <!-- js navbar -->
+
+</head>
+
+<body>
+ <!-- TOP BTN -->
+ <button id="scroll-to-top" title="Go to top"><span class="icon-top-btn"></span></button>
+
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top navbar-container">
+   <div class="container">
+     <span class="icon-menu navbar-toggle-icon d-md-none" onclick="openNav()"></span>
+     <a class="navbar-brand navbar-brand-container" href="Home.html"><img src="imgs/logo-viatrips.svg"
+         class="navbar-logo" /></a>
+     <div class="d-none d-md-block mx-auto">
+       <ul class="navbar-nav">
+         <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Tour</a>
+
+           <div class="dropdown-menu">
+             <a class="dropdown-item" href="Detail.html">Spring tour</a>
+             <a class="dropdown-item" href="#">Summer tour</a>
+             <a class="dropdown-item" href="#">Autumn tour</a>
+             <a class="dropdown-item" href="#">Winter tour</a>
+           </div>
+         </li>
+         <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Planning</a>
+
+           <div class="dropdown-menu">
+             <a class="dropdown-item" href="Plan.html">Your plan</a>
+             <a class="dropdown-item" href="#">Suggestion</a>
+             <a class="dropdown-item" href="#">Plan a trip</a>
+           </div>
+         </li>
+         <li class="nav-item align-items-center d-flex">
+           <a class="nav-link" href="Mytrip.html">My Trip</a>
+         </li>
+         <li class="nav-item align-items-center d-flex">
+           <a class="nav-link" href="Blog.html">Blogs</a>
+         </li>
+       </ul>
+     </div>
+     <div class="navbar-nav ml-auto ml-md-0">
+       <div class="d-flex justify-content-center">
+         <a class="nav-link" href="Wishlist.html"><span class="icon-favorite navbar-icon"></span></a>
+         <a class="nav-link" href="Login.html"><span class="icon-user navbar-icon"></span></a>
+       </div>
+     </div>
+   </div>
+ </nav>
+
+ <!-- Sidebar -->
+ <div id="overlay" onclick="closeNav()"></div>
+ <div class="sidebar" id="sidebarMobile">
+   <div class="sidebar-content">
+     <div>
+       <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"><span class="icon-menu-open"></span></a>
+       <a href="Home.html"><span class="icon-home sidebar-icon"></span>Home</a>
+       <div class="dropdown-mobile">
+         <a href="javascript:void(0)" class="dropdown-link"><span class="icon-tour sidebar-icon"></span>Tour</a>
+         <div class="dropdown-mobile-content">
+           <a href="Detail.html">Spring tour</a>
+           <a href="#">Summer tour</a>
+           <a href="#">Autumn tour</a>
+           <a href="#">Winter tour</a>
+         </div>
+       </div>
+       <div class="dropdown-mobile">
+         <a href="javascript:void(0)" class="dropdown-link"><span
+             class="icon-shopping-list sidebar-icon"></span>Planning</a>
+         <div class="dropdown-mobile-content">
+           <a href="Plan.html">Your plan</a>
+           <a href="#">Suggestion</a>
+           <a href="#">Plan a trip</a>
+         </div>
+       </div>
+
+       <a href="Mytrip.html"><span class="icon-ticket sidebar-icon"></span>My Trip</a>
+       <a href="Blog.html"><span class="icon-blog sidebar-icon"></span>Blogs</a>
+     </div>
+     <a href="Login.html" class="btn btn-outline-primary primary-button d-flex w-100 signin-btn">
+       <span class="icon-login signin-icon"></span>
+       Sign in</a>
+   </div>
+ </div>
+
+  <!--BANNER-->
+    <div class="container-fluid" id="banner1">  
+        <div class="row justify-content-center" id="logo-term">
+            <img src="imgs/imgs-TermCondition/Logo-Term.png" alt="" class="img-fluid">
+        </div>     
+    </div>
+    <!------------------------------Breadcrumb------------------------------>
+    <nav aria-label="breadcrumb" class="my-3">
+      <div class="container breadcrumb-container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="Home.html"><span class="icon-home breadcrumb-icon"></span></a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Terms Of Use
+          </li>
+        </ol>
+      </div>
+    </nav>
+   <!-- title -->
+   <div class="container title-container">
+    <div class="d-flex title-index">
+      <h2>Terms Of Use</h2>
+      <div class="underline-title"></div>
+    </div>
+  </div>
+
+ <!------------------------------Tour policy------------------------------>
+
+
+<div class="container" id="policy">
+  <div class="row"> 
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+
+      <div>
+      <div id="flip" >Terms & Conditions <span id="icondown" class="icon-arrowline-down"></span></div>
+      <div id="panel">
+        &bull; &emsp;This website is operated by Viatrips. Please carefully read the Terms & Conditions before using or registering on this website. You must fully agree to these terms and conditions to use the website. If you do not agree with any part of these terms and conditions, you may not use this website in any form.
+        <br> &bull; &emsp;Note that this website is intended for global access by users.
+        <br> &bull; &emsp;The information and pricing on this website apply to users globally.
+        <br> &bull; &emsp;We reserve the right to deny access to this website at any time without prior notice.
+      </div> 
+      </div>
+
+      <div>
+      <div id="flip1">Regulations & Obligations <span class="icon-arrowline-down"></span> </div>
+      <div id="panel1">
+         &emsp;Accessing this website is conditioned upon your agreement that all information on the website and any issues arising between you and us will be governed by Vietnamese law, and any disputes between you and us will be subject to the jurisdiction of Vietnamese courts.<br>
+        <br>  &emsp;By using this website, please agree to:
+        <br>  &bull; &emsp;Accept financial responsibility for all transactions made under your name and account.
+        <br>  &bull; &emsp;Be of legal capacity, aged 18 or above.
+        <br>  &bull; &emsp;Ensure that all information provided about yourself and others is entirely accurate.
+        <br>  &bull; &emsp;Not use this website for fraudulent or misleading registration.
+        <br>  &bull; &emsp;Prohibit the dissemination of threatening, defamatory, pornographic, political, racially discriminatory, or any other illegal or provocative materials through this website.
+        <br>  &bull; &emsp;Not modify, copy, transmit, distribute, sell, disseminate, or license this website and any of its content in any form except when copying information from this website for your personal, non-commercial use.
+      </div>
+      </div>
+  
+      <div>
+      <div id="flip2"> Registration Terms <span class="icon-arrowline-down"></span> </div>
+      <div id="panel2"> &bull; &emsp;When registering through our website, please establish a direct contractual relationship (legal binding) with us. The registration terms include limitations and exclusions on legal liability, cancellation fees, and charges for changes if the registration is canceled or modified after confirmation. We suggest that you thoroughly review the applicable registration terms when completing the registration process. The registration terms encompass limitations and exclusions on legal responsibility, cancellation fees, and charges for changes if the registration is canceled or modified after confirmation.
+        <br> &bull; &emsp;Registration Conditions:
+
+        When registering for the tour, please carry your ID/Passport (Passport) or provide the full, accurate name as stated on your ID/Passport (Passport)/Birth certificate (children under 14 years old) in the following order: Last name/Middle name/First name. The name provided during registration should match the identification document used during the tour according to the airline's regulations.
+        
+        Document Regulations during the Tour:
+        
+        For Vietnamese citizens: Children aged 14 and above and adults must bring a valid ID/Passport (Passport), clear image/Birth certificate (children under 14 years old). Children over 14 years old must have a valid ID or Passport (Passport) for flight procedures. For Foreigners/Viet Kieu: When participating in the tour, please bring a valid Passport (Passport) or green card along with a Visa and Vietnamese re-entry permit, and complete the flight procedures according to airline regulations.
+        
+        <br> &bull; &emsp; Flight Tickets and Changes:
+        
+        If you provide incorrect names or arrive late for the flight, you may need to pay fees to change or buy new tickets according to the airline's regulations (if seats are available). Promotional tickets on Vietnam Airlines, Jetstar, Vietjet cannot be refunded or changed and will incur a 100% fee for incorrect names. Vietnam Airlines, Jetstar automatically cancel the return leg if the outbound leg is not flown.
+        
+        <br> &bull; &emsp; Changes in Tour Itinerary:
+        
+        Due to airline-related situations, flight schedules may change without prior notice. Depending on the actual situation, the program and sightseeing spots may be adjusted to suit the flight schedule and actual weather conditions. Viatrips will not be responsible for guaranteeing sightseeing spots in case of natural disasters, security incidents, or airline issues.
+        
+        <br> &bull; &emsp; Hotel Check-in & Check-out:
+        
+        Hotel check-in is usually after 14:00 and check-out is before 12:00. Rooms might not be adjacent or on the same floor, and the bed type may differ from the request, depending on the hotel/resort situation.
+        
+        <br> &bull; &emsp; Accommodation Arrangements:
+        
+        Solo travelers may be required to pay an additional fee for a single room. In cases where there are solo travelers of the same gender who wish to share a room, Viatrips will refund the single room surcharge.
+        
+        <br> &bull; &emsp; Health Conditions and Participation:
+        
+        Pregnant guests should inform tour staff at the time of registration. It's advisable to consult a doctor before the tour. Guests should take full responsibility for their health and that of their unborn child during the trip.
+        
+        <br> &bull; &emsp; Baggage Regulations:
+        
+        Carry-on luggage should not exceed 7kg/1 passenger with dimensions not exceeding 56cm x 36cm x 23 cm. Checked baggage should not exceed 15kg/1 passenger with dimensions not exceeding 119cm x 119cm x 81cm. Certain items are not allowed as checked baggage or in-flight items according to airline regulations.
+        
+        <br> &bull; &emsp; Concentration Information:
+        
+        At Tan Son Nhat Airport, the domestic terminal, check-in is advised 2 hours before departure (normal days) and 2 hours 30 minutes before departure (during holidays).
+        
+        <br> &bull; &emsp; Disclaimer for Health Conditions:
+        
+        Older travelers and pregnant women should ensure they are in good health before joining the tour. Viatrips holds no liability for health-related incidents during the tour. Guests agree not to hold Viatrips responsible for any health-related costs except those covered by insurance.
+        
+        <br> &bull; &emsp; Request for Invoices:
+        
+        If you require an invoice, please provide the necessary details to the tour staff at the time of registration. Invoices will not be issued after the tour ends.
+        
+        <br> &bull; &emsp; Terms and Conditions for Ticket Sales:
+        
+        Please carefully review the Ticket Sales Conditions before registering for the trip. If registering indirectly through a representative, ensure all information is updated.
+      </div>
+      </div>
+
+      <div>
+        <div id="flip3">Unforseenable Circumstances  <span class="icon-arrowline-down"></span> </div>
+        <div id="panel3">Viatrips is not responsible for changes or cancellations due to reasons beyond its control, such as earthquakes, volcanic eruptions, storms, wars, strikes, protests, terrorism, political unrest, etc. Any resolutions or compensations (if applicable) will depend on the respective service providers.</div>
+        </div>
+
+        <div>
+          <div id="flip4">Travel Documents <span class="icon-arrowline-down"></span> </div>
+          <div id="panel4">  &bull; &emsp; Valid Passport: Customers must possess a valid passport for entry, departure, and travel through each destination on the tour itinerary (passports must be valid for at least 6 months from the return date).
+
+            <br> &bull; &emsp;Types of Documentation: Please note that "To facilitate the issuance of travel documents, all documentation related to the tour such as payment vouchers, tour itineraries, invoices will be sent via email or made available on the website www.viatrips.com.vn" once the company has received full payment.
+            
+            <br> &bull; &emsp; Detailed Trip Information: Customers are responsible for accessing the website at least 72 hours before departure to ensure they have the most detailed information about the trip as there may have been minor changes since the tour dossier was initially provided by the company</div>
+          </div>
+
+    </div>
+
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+
+      <div>
+      <div id="flip5">Payment <span class="icon-arrowline-down"></span> </div>
+      <div id="panel5"> &bull; &emsp; All tours or services must be prepaid unless otherwise specified. We accept payment via Visa, MasterCard, American Express, and JCB.
+
+        <br> &bull; &emsp; Please ensure that you provide accurate credit card billing information. Failure to provide the correct billing address for the credit/debit card and/or accurate cardholder information may result in ticket issuance delays and increased overall costs. We reserve the right to cancel tickets after issuance if payment is declined or if inaccurate credit card information is provided. Additionally, we reserve the right to randomly check (including voter lists) to minimize credit card fraud.
+        
+        <br> &bull; &emsp; Viatrips will not collect detailed credit card information from you. The information you provide will be kept absolutely secure within the technical system according to the global technology security standard (SSL) of MasterCard and Vietcombank (Vietnam Joint Stock Commercial Bank for Foreign Trade) when making credit card payments.
+        <br> &bull; &emsp; After payment, Viatrips will send a confirmation/payment voucher via email or fax: this voucher must be printed as evidence of purchase and presented to the service provider.
+
+        <br> &bull; &emsp; All traveler information must be accurately provided at the time of registration.
+        
+        <br> &bull; &emsp; Any requests for modifications or additions must be sent via email to Viatrips.
+        
+        <br> &bull; &emsp; Viatrips is not liable for any issues that may arise if you fail to receive or carefully review your confirmation/payment voucher. In case you haven't received the payment voucher, you need to inform Viatrips at least 72 hours before the scheduled service provision date.</div> 
+      </div>
+
+      <div>
+      <div id="flip6">Tour Prices <span class="icon-arrowline-down"></span> </div>
+      <div id="panel6">&bull; &emsp; All tour prices are in Vietnamese Dong (VND). Payments made in other currencies will be converted to Vietnamese Dong (VND) based on the prevailing exchange rate.
+        <br> &bull; &emsp; The tour prices include the items listed in the "Inclusions" section.
+        <br> &bull; &emsp; We offer a 25% discount for children and a 90% discount for infants.
+        <br> &bull; &emsp; The information and prices on this website are not always 'real-time' and are subject to occasional updates. While efforts are made to ensure accuracy in information and prices, errors may occur. In the event of an inaccurate price due to a system error, we are not bound by that price. </div>
+      </div>
+  
+      <div>
+      <div id="flip7">Cancellation and Refund Procedure<span class="icon-arrowline-down"></span> </div>
+      <div id="panel7"> &bull; &emsp; The cancellation of all services by tour participants must be sent and received in written form: via email or fax. Viatrips does not accept service cancellation requests over the phone.
+       <br> &bull; &emsp; Viatrips is not liable for any cancellation requests that have not been received and confirmed back to you. In such cases, cancellation fees for services or tours may apply.</div>
+      </div>
+
+      <div>
+        <div id="flip8">Complaints and Claims <span class="icon-arrowline-down"></span> </div>
+        <div id="panel8">If a customer has a complaint with Viatrips, they should first inform the tour leader as soon as possible to address the issue. If unsatisfied, the customer can contact Viatrips's representative (salesperson) during the tour to give Viatrips the chance to rectify the issue. If still dissatisfied through these channels during the trip, the customer needs to send any complaints directly to c.s@vietravel.com within 30 days from the end of the tour. The company will not accept responsibility for complaints received after this deadline.</div>
+        </div>
+
+        <div>
+          <div id="flip9">Promotions <span class="icon-arrowline-down"></span> </div>
+          <div id="panel9">Tours/packages/products transacted using promotional codes cannot be canceled and are non-refundable.
+            Furthermore, any discounts and reward points displayed on this website are only applicable to the website www.viatrips.com.vn and may change through other websites linked to www.viatrips.com.vn.</div>
+          </div>
+    </div>
+
+
+  </div>
+</div>
+    
+<!-- contact us -->
+<div class="container contactusbox-FAQs" id="contactBox">
+    <div class="row">
+      <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12 offset-sm-0 col-12 offset-0 Box">
+         <!-- title -->
+  <div class="container title-container">
+    <div class="d-flex title-index">
+      <h2>Contact Us</h2>
+      <div class="underline-title"></div>
+    </div>
+  </div>
+        <span class="title2-FAQs d-flex">Contact Viatrips as soon as you need support</span>
+        <label class="labelcontactus-FAQs d-flex">Full name</label>
+        <input type="text" class="form-control" placeholder="Your name" id="input-FAQs" />
+        <label class="labelcontactus-FAQs d-flex">Email</label>
+        <input type="text" class="form-control" placeholder="Your email address" id="input-FAQs" />
+        <label class="labelcontactus-FAQs d-flex">Contact</label>
+        <input type="text" class="form-control" placeholder="Message content" id="comment-FAQs" />
+        <button class="btncontactus-FAQs" type="button">
+          Send your question
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+   
+  <!--BANNER2-->
+  <div class="container-fluid" id="banner2">  
+    <div class=" row justify-content-center textbanner2">
+      <p> All you need to know! </p>
+     <img class="imgbird" src="imgs/imgs-CheckOut/viatrips-bird.svg">
+     </div>   
+    </div>     
+</div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="d-md-none">
+      <div id="footerCollapse">
+        <div class="card">
+          <div class="card-header" id="AboutViatrips">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#aboutViatrips"
+              aria-expanded="true" aria-controls="aboutViatrips">
+              About Viatrips
+            </button>
+          </div>
+
+          <div id="aboutViatrips" class="collapse" aria-labelledby="AboutViatrips" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="carrer.html">Carrers</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingExplore">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#explore" aria-expanded="true"
+              aria-controls="explore">
+              Explore
+            </button>
+          </div>
+          <div id="explore" class="collapse" aria-labelledby="headingExplore" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Airplane ticket</a></li>
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Group booking</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingInformation">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#information" aria-expanded="true"
+              aria-controls="information">
+              Information
+            </button>
+          </div>
+          <div id="information" class="collapse" aria-labelledby="headingInformation" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Tour booking policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="TermsOfUse.html">Terms of Use</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2">
+          <h4 class="footer-title">About Viatrips</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="carreer.html">Carrers</a></li>
+            <li><a href="AboutUs.html">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Airplane ticket</a></li>
+            <li><a href="#">Hotel</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Group booking</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2">
+          <h4 class="footer-title">Information</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Tour booking policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="TermsOfUse.html">Terms of Use</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-5 col-md-3 col-lg-2 social-section">
+          <h4 class="footer-title">Social media</h4>
+          <div class="d-flex">
+            <a href="#"><span class="icon-facebook social-icon"></span></a>
+            <a href="#"><span class="icon-instagram social-icon"></span></a>
+            <a href="#"><span class="icon-youtube social-icon"></span></a>
+          </div>
+          <div class="d-flex">
+            <a href="#"><span class="icon-discord social-icon"></span></a>
+            <a href="#"><span class="icon-tiktok social-icon"></span></a>
+            <a href="#"><span class="icon-twitter social-icon"></span></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-5 d-block d-md-none social-section">
+              <div class="d-flex flex-wrap">
+                <a href="#"><span class="icon-facebook social-icon"></span></a>
+                <a href="#"><span class="icon-instagram social-icon"></span></a>
+                <a href="#"><span class="icon-youtube social-icon"></span></a>
+              </div>
+              <div class="d-flex flex-wrap">
+                <a href="#"><span class="icon-discord social-icon"></span></a>
+                <a href="#"><span class="icon-tiktok social-icon"></span></a>
+                <a href="#"><span class="icon-twitter social-icon"></span></a>
+              </div>
+            </div>
+            <div class="col-7 col-md-6 col-lg-12">
+              <h4 class="footer-title">Payment</h4>
+              <div class="d-flex flex-wrap">
+                <img src="imgs/visa.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/paypal.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/applepay.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/vnpay.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/samsungpay.svg" class="payment-icon mb-md-0" />
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12">
+              <div class="input-group email-address">
+                <input placeholder="Enter Email Address" class="form-control email-input" />
+                <span class="input-group-append right-icon-container">
+                  <button class="btn border-0 text-white send-btn" type="button">
+                    <span class="icon-send send-icon"></span>
+                  </button>
+                </span>
+              </div>
+              <div class="receive-news mt-2">
+                <input type="checkbox" checked="checked" class="checkbox" />
+                <span class="checkmark"></span>
+                Yes, i want to receive news and products emails. Please read
+                our
+                <a href="#">privacy policy.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="copyright text-center">
+      Copyright © 2023 Viatrips. All rights reserved.
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <!-- chatbox -->
+  <button class="chatbox-open">
+    <img src="imgs/avatar-viatrips.svg" class="img-fluid" />
+  </button>
+  <button class="chatbox-close">
+    <span class="icon-closelight icon-chatbox"></span>
+  </button>
+  <section class="chatbox-popup">
+    <header class="chatbox-popup__header">
+      <aside style="flex: 2">
+        <img src="imgs/avatar3-viatrips.svg" class="img-fluid" />
+      </aside>
+      <aside style="flex: 8">
+        <div class="row">
+          <h1 class="mr-2 ml-3 chat-box-title">Viatrips</h1>
+          <span class="icon-tick tickxanh"><span class="path1"></span><span class="path2"></span><span
+              class="path3"></span></span>
+        </div>
+        <span class="ml-1">Staff (Online)</span>
+      </aside>
+      <aside style="flex: 1">
+        <button class="chatbox-maximize">
+          <span class="icon-select-window icon-chatbox"></span>
+        </button>
+      </aside>
+    </header>
+    <main class="chatbox-popup__main">
+      <h5>15:30</h5>
+      <div id="message-chatbox">
+        <span>Hi there!<br />
+          Welcome to Viatrips's services. Where is your desired
+          departure?</span>
+      </div>
+    </main>
+    <footer class="chatbox-popup__footer">
+      <aside style="flex: 20">
+        <textarea type="text" placeholder="Type your message here..." autofocus></textarea>
+      </aside>
+      <aside style="flex: 1; color: #888; text-align: center">
+        <span class="icon-send icon-chatbox" style="color: #4340d8"></span>
+      </aside>
+    </footer>
+  </section>
+  <section class="chatbox-panel">
+    <header class="chatbox-panel__header">
+      <aside style="flex: 2">
+        <img src="imgs/avatar2-viatrips.svg" class="img-fluid" />
+      </aside>
+      <aside style="flex: 6">
+        <div class="row">
+          <h5 class="mr-2 ml-3 mb-0">Viatrips</h5>
+          <span class="icon-tick tickxanh"><span class="path1"></span><span class="path2"></span><span
+              class="path3"></span></span>
+        </div>
+        <span class="ml-1">Staff (Online)</span>
+      </aside>
+      <aside style="flex: 3; text-align: right">
+        <button class="chatbox-minimize">
+          <span class="icon-select-window icon-chatbox"></span>
+        </button>
+        <button class="chatbox-panel-close">
+          <span class="icon-closelight icon-chatbox"></span>
+        </button>
+      </aside>
+    </header>
+    <main class="chatbox-panel__main" style="flex: 1">
+      <h5>15:30</h5>
+      <div id="message-chatbox">
+        <span>Hi there!<br />
+          Welcome to Viatrips's services. Please choose your desired
+          departure point?</span>
+      </div>
+
+      <div id="message-btn-box">
+        <button class="btn primary-button" id="message-btn">
+          The North
+        </button>
+        <button class="btn primary-button" id="message-btn">
+          The Central
+        </button>
+        <button class="btn primary-button" id="message-btn">
+          The South
+        </button>
+      </div>
+    </main>
+    <footer class="chatbox-panel__footer">
+      <aside style="flex: 15">
+        <textarea type="text" placeholder="Type your message here..." autofocus></textarea>
+      </aside>
+      <aside style="flex: 1; color: #888; text-align: center">
+        <span class="icon-send icon-chatbox" style="color: #4340d8"></span>
+      </aside>
+    </footer>
+  </section>
+
+
+  <!-- js chatbox -->
+  <script>
+    $(".chatbox-open").click(() =>
+      $(".chatbox-popup, .chatbox-close").fadeIn()
+    );
+
+    $(".chatbox-close").click(() =>
+      $(".chatbox-popup, .chatbox-close").fadeOut()
+    );
+
+    $(".chatbox-maximize").click(() => {
+      $(".chatbox-popup, .chatbox-open, .chatbox-close").fadeOut();
+      $(".chatbox-panel").fadeIn();
+      $(".chatbox-panel").css({ display: "flex" });
+    });
+
+    $(".chatbox-minimize").click(() => {
+      $(".chatbox-panel").fadeOut();
+      $(".chatbox-popup, .chatbox-open, .chatbox-close").fadeIn();
+    });
+
+    $(".chatbox-panel-close").click(() => {
+      $(".chatbox-panel").fadeOut();
+      $(".chatbox-open").fadeIn();
+    });
+  </script> <!-- js chatbox -->
+
+  <!-- js top btn -->
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $("#scroll-to-top").fadeIn();
+      } else {
+        $("#scroll-to-top").fadeOut();
+      }
+    });
+
+    $("#scroll-to-top").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 500);
+    });
+  </script> <!-- js top btn -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+//slide up down------------------------------------------------------
+$(document).ready(function(){
+ function hideAllPanels() {
+   $("#panel").slideUp("slow");
+   $("#panel1").slideUp("slow");
+   $("#panel2").slideUp("slow");
+   $("#panel3").slideUp("slow");
+   $("#panel4").slideUp("slow");
+   $("#panel5").slideUp("slow");
+   $("#panel6").slideUp("slow");
+   $("#panel7").slideUp("slow");
+   $("#panel8").slideUp("slow");
+   $("#panel9").slideUp("slow");
+
+ }
+
+ $("#flip").click(function(){
+   hideAllPanels();
+   var panel = $(this).next(); 
+
+   if (panel.is(":visible")) {
+     panel.slideUp("slow"); 
+     $(this).removeClass("clicked"); 
+   } else {
+     $("#panel").slideUp("slow"); 
+     panel.slideDown("slow");
+     $("#flip").removeClass("clicked");
+     $(this).addClass("clicked"); 
+   }
+ });
+ $("#flip1").click(function(){
+   hideAllPanels();
+   var panel = $(this).next(); 
+
+   if (panel.is(":visible")) {
+     panel.slideUp("slow"); 
+     $(this).removeClass("clicked"); 
+   } else {
+     $("#panel1").slideUp("slow"); 
+     panel.slideDown("slow");
+     $("#flip1").removeClass("clicked");
+     $(this).addClass("clicked"); 
+   }
+ });
+ $("#flip2").click(function(){
+   hideAllPanels();
+   var panel = $(this).next(); 
+
+   if (panel.is(":visible")) {
+     panel.slideUp("slow"); 
+     $(this).removeClass("clicked"); 
+   } else {
+     $("#panel2").slideUp("slow"); 
+     panel.slideDown("slow");
+     $("#flip2").removeClass("clicked");
+     $(this).addClass("clicked"); 
+   }
+ });
+ $("#flip3").click(function(){
+   hideAllPanels();
+   var panel = $(this).next(); 
+
+   if (panel.is(":visible")) {
+     panel.slideUp("slow"); 
+     $(this).removeClass("clicked"); 
+   } else {
+     $("#panel3").slideUp("slow"); 
+     panel.slideDown("slow");
+     $("#flip3").removeClass("clicked");
+     $(this).addClass("clicked"); 
+   }
+ });
+ $("#flip4").click(function(){
+   hideAllPanels();
+   var panel = $(this).next(); 
+   
+   if (panel.is(":visible")) {
+     panel.slideUp("slow"); 
+     $(this).removeClass("clicked"); 
+   } else {
+     $("#panel4").slideUp("slow"); 
+     panel.slideDown("slow");
+     $("#flip4").removeClass("clicked");
+     $(this).addClass("clicked"); 
+   }
+ });
+ $("#flip5").click(function(){
+   hideAllPanels();
+   var panel = $(this).next(); 
+
+   if (panel.is(":visible")) {
+     panel.slideUp("slow"); 
+     $(this).removeClass("clicked"); 
+   } else {
+     $("#panel5").slideUp("slow"); 
+     panel.slideDown("slow");
+     $("#flip5").removeClass("clicked");
+     $(this).addClass("clicked"); 
+   }
+ });
+ $("#flip6").click(function(){
+   hideAllPanels();
+   var panel = $(this).next(); 
+
+   if (panel.is(":visible")) {
+     panel.slideUp("slow"); 
+     $(this).removeClass("clicked"); 
+   } else {
+     $("#panel6").slideUp("slow"); 
+     panel.slideDown("slow");
+     $("#flip6").removeClass("clicked");
+     $(this).addClass("clicked"); 
+   }
+ });
+ $("#flip7").click(function(){
+   hideAllPanels();
+   var panel = $(this).next(); 
+
+   if (panel.is(":visible")) {
+     panel.slideUp("slow"); 
+     $(this).removeClass("clicked"); 
+   } else {
+     $("#panel7").slideUp("slow"); 
+     panel.slideDown("slow");
+     $("#flip7").removeClass("clicked");
+     $(this).addClass("clicked"); 
+   }
+ });
+ $("#flip8").click(function(){
+   hideAllPanels();
+   var panel = $(this).next(); 
+
+   if (panel.is(":visible")) {
+     panel.slideUp("slow"); 
+     $(this).removeClass("clicked"); 
+   } else {
+     $("#panel8").slideUp("slow"); 
+     panel.slideDown("slow");
+     $("#flip8").removeClass("clicked");
+     $(this).addClass("clicked"); 
+   }
+ });
+ $("#flip9").click(function(){
+   hideAllPanels();
+   var panel = $(this).next(); 
+
+   if (panel.is(":visible")) {
+     panel.slideUp("slow"); 
+     $(this).removeClass("clicked"); 
+   } else {
+     $("#panel9").slideUp("slow"); 
+     panel.slideDown("slow");
+     $("#flip9").removeClass("clicked");
+     $(this).addClass("clicked"); 
+   }
+ });
+//change icon------------------------------------------------------
+ $("#flip").click(function(){
+ $("#flip span").toggleClass("icon-arrowline-up");
+ });
+ $("#flip1").click(function(){
+ $("#flip1 span").toggleClass("icon-arrowline-up");
+ });
+ $("#flip2").click(function(){
+ $("#flip2 span").toggleClass("icon-arrowline-up");
+ });
+ $("#flip3").click(function(){
+ $("#flip3 span").toggleClass("icon-arrowline-up");
+ });
+ $("#flip4").click(function(){
+ $("#flip4 span").toggleClass("icon-arrowline-up");
+ });
+ $("#flip5").click(function(){
+ $("#flip5 span").toggleClass("icon-arrowline-up");
+ });
+ $("#flip6").click(function(){
+ $("#flip6 span").toggleClass("icon-arrowline-up");
+ });
+ $("#flip7").click(function(){
+ $("#flip7 span").toggleClass("icon-arrowline-up");
+ });
+ $("#flip8").click(function(){
+ $("#flip8 span").toggleClass("icon-arrowline-up");
+ });
+ $("#flip9").click(function(){
+ $("#flip9 span").toggleClass("icon-arrowline-up");
+ });
+ 
+ 
+});
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+body {
+    padding-top: 0;
+    min-height: 0;
+    background-image: url("../imgs/imgs-Thankyou/Banner1-ThankYou.avif");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+  }
+ .textthankyou {
+    margin-top: 200px;
+    font-size: 56px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+
+ }
+ .textsmall {
+    color:#fff;
+    font-size:20px;
+    text-align: center;
+    font-weight: 700;
+ }
+ .login-form {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(21px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 0px 16px;
+  width: 400px;
+}
+.login-btn {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #4340d8;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+  }
+.connect {
+    color: #4340d8;
+    font-weight: 700;
+    text-align: center;
+
+}
+.connect span {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    padding: 0px 24px;
+}
+.connect h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #4340d8;
+    font-weight: 700;
+    padding: 20px;
+}
+.visit h3 {
+    font-size: 20px;
+    color: #4340d8;
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
+}
+  
+
+/* XL */
+@media (min-width: 1200px) {
+    .login-btn:hover {
+        margin: 24px;
+        width: 100%;
+        padding: 12px 20px;
+        border-radius: 8px;
+        background-color: #FFCA00;
+        color: #000;
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .login-form {
+        margin-top: 40px;
+      }
+  }
+  
+  /* L */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .login-btn:hover {
+        background-color: #FFCA00;
+        color: #000;
+      }
+      .login-form {
+        margin-top: 40px;
+      }
+  }
+  
+  /* MD */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .textthankyou {
+        margin-top: 120px;
+    }
+    .login-form {
+        margin-top: 32px;
+      }
+      .login-btn:hover {
+        background-color: #4340d8;
+        color: #fff;
+        margin-bottom: 16px;
+      }
+      .login-btn {
+        margin-bottom: 16px;
+      }
+      .connect {
+        margin-bottom: 16px;
+      }
+  }
+  
+  /* SM */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .textthankyou {
+        margin-top: 90px;
+    }
+    .login-form {
+        width: 100%;
+       }
+       .login-form {
+        margin-top: 24px;
+        padding: 8px;
+      }
+      .login-btn {
+        margin-bottom: 16px;
+      }
+      .login-btn:hover {
+        background-color: #4340d8;
+        color: #fff;
+        margin-bottom: 16px;
+      }
+      .connect {
+        margin-bottom: 16px;
+      }
+  }
+  /* XS */
+  @media (max-width: 575px) {
+    .textthankyou {
+        margin-top: 100px;
+    }
+    .login-form {
+        width: 100%;
+       }
+       .login-form {
+        margin-top: 24px;
+        padding: 8px;
+      }
+      .login-btn:hover {
+        background-color: #4340d8;
+        color: #fff;
+        margin-bottom: 16px;
+      }
+      .login-btn {
+        margin-bottom: 16px;
+      }
+      .connect {
+        margin-bottom: 16px;
+      }
+  }
+  

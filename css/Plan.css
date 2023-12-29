@@ -71,10 +71,11 @@
 }
 .bg-detail{
     background-color: white;
-    height: 156px;
+    height: auto;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 8px 8px;
     margin-top: 12px;
+    padding-bottom: 16px;
 }
 .ContentDetail h1{
     font-size: 20px;
@@ -121,7 +122,7 @@
 		padding: 5px 10px;
     
 		&:first-child {
-			margin-left: 10px;
+			margin-left: 0px;
 		}
 	}
 }
@@ -170,7 +171,8 @@
   color:black;
   background-color: #FFCA00;
   vertical-align: middle;
-  padding-top: 13px;
+  padding-top: 14px;
+  border:none;
 }
 
 .primary-button {
@@ -292,7 +294,7 @@
   margin-left: 20px;
 }
 .iconlich{
-  font-size: 24px;
+  font-size: 20px;
   color: white;
   margin-left:20px ;
 }
@@ -312,14 +314,30 @@
   
   /* LG */
   @media (min-width: 992px) and (max-width: 1199px) {
-    
-
+    #Create {
+      height: 48px;
+      font-size: 16px;
+      line-height: 18px;
+      color:white;
+      background-color: #4340d8;
+      vertical-align: middle;
+      padding-top: 14px;
+      border:none;
+    }
+    #Create:hover {
+      height: 48px;
+      font-size: 16px;
+      line-height: 18px;
+      color:#000000;
+      background-color: #FFCA00;
+      vertical-align: middle;
+      padding-top: 14px;
+      border:none;
+    }
   }
   
   /* MD */
   @media (min-width: 768px) and (max-width: 991px) {
-   
-
     .primary-button:hover {
       border:solid 2px #4340d8;
       color:#000000;
@@ -333,6 +351,16 @@
       background-color: white;
       border: solid 2px #4340d8;
     }
+    #Create {
+      height: 48px;
+      font-size: 16px;
+      line-height: 18px;
+      color:white;
+      background-color: #4340d8;
+      vertical-align: middle;
+      padding-top: 14px;
+      border:none;
+    }
     #Create:hover {
       height: 48px;
       font-size: 16px;
@@ -340,7 +368,8 @@
       color:white;
       background-color: #4340d8;
       vertical-align: middle;
-      padding-top: 13px;
+      padding-top: 14px;
+      border:none;
     }
   }
   
@@ -360,6 +389,16 @@
       background-color: white;
       border: solid 2px #4340d8;
     }
+    #Create {
+      height: 48px;
+      font-size: 16px;
+      line-height: 18px;
+      color:white;
+      background-color: #4340d8;
+      vertical-align: middle;
+      padding-top: 14px;
+      border:none;
+    }
     #Create:hover {
       height: 48px;
       font-size: 16px;
@@ -367,7 +406,8 @@
       color:white;
       background-color: #4340d8;
       vertical-align: middle;
-      padding-top: 13px;
+      padding-top: 14px;
+      border:none;
     }
     .imghotplan img{
       width: 100%;
@@ -389,7 +429,14 @@
   }
   /* XS */
   @media (max-width: 575px) {
-  
+    .bg-detail{
+      background-color: white;
+      height: auto;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 8px 8px;
+      margin-top: 12px;
+      padding-bottom: 8px;
+  }
     .primary-button:hover {
       border:solid 2px #4340d8;
       color:#000000;
@@ -403,6 +450,16 @@
       background-color: white;
       border: solid 2px #4340d8;
     }
+    #Create {
+      height: 48px;
+      font-size: 16px;
+      line-height: 18px;
+      color:white;
+      background-color: #4340d8;
+      vertical-align: middle;
+      padding-top: 14px;
+      border:none;
+    }
     #Create:hover {
       height: 48px;
       font-size: 16px;
@@ -410,7 +467,8 @@
       color:white;
       background-color: #4340d8;
       vertical-align: middle;
-      padding-top: 13px;
+      padding-top: 14px;
+      border:none;
     }
     .imghotplan img{
       width: 100%;
@@ -419,11 +477,11 @@
       border-radius: 8px;
       margin-top: 24px;
     }
-    #location{
+    #location {
       font-size: 24px;
       font-weight: bold;
-      color:white;
-      margin-top: -100px;
+      color: white;
+      margin-top: -80px;
       margin-left: 20px;
     }
     .primary-button {
