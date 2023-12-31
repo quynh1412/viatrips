@@ -420,7 +420,7 @@
   font-weight: bold;
   color: black;
   margin-bottom: 8px;
-  margin-top: 32px;
+  margin-top: 16px;
 }
 .cost {
   font-size: 24px;
@@ -456,12 +456,8 @@
   line-height: 18px;
   color: #5c6470;
 }
-.vl {
-  border-left: 1px solid #abb1ba;
-  height: 198px;
-  margin-top: 24px;
-}
-.img-cardngang img {
+
+.img-cardngang {
   border-radius: 8px;
   width: 100%;
   height: 100%;
@@ -537,7 +533,7 @@
 /* XL */
 @media (min-width:1200px) {
   .card-text2 {
-    margin-top: 75px;
+    margin-top: 16px;
   }
 }
 /* LG */
