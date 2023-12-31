@@ -32,10 +32,7 @@
   color: #5C6470;
   text-decoration: none;
 }
-.breadcrumb-item > a:hover {
-  color: #4340d8;
-  text-decoration: none;
-}
+
 
 .breadcrumb-icon {
   font-size: 24px;
@@ -208,6 +205,10 @@
   .cardd{
     height: 430px;
   }
+  .breadcrumb-item > a:hover {
+    color: #4340d8;
+    text-decoration: none;
+  }
 }
 /* LG */
 @media (min-width:992px) and (max-width:1199px) {
@@ -219,6 +220,10 @@
   }
   .cardd{
     height: 400px;
+  }
+  .breadcrumb-item > a:hover {
+    color: #4340d8;
+    text-decoration: none;
   }
 }
 /* MD */
