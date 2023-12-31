@@ -140,7 +140,6 @@
 /* Blog Card */
 .cardd{
   width: 100%;
-  height: 411px;
   background: #fff;
   border-radius: 8px;
   padding: 16px;
@@ -202,9 +201,7 @@
 }
 /* XL */
 @media (min-width:1200px) {
-  .cardd{
-    height: 430px;
-  }
+
   .breadcrumb-item > a:hover {
     color: #4340d8;
     text-decoration: none;
@@ -218,9 +215,7 @@
     font-weight: 600;
     color: #4340D8;
   }
-  .cardd{
-    height: 400px;
-  }
+
   .breadcrumb-item > a:hover {
     color: #4340d8;
     text-decoration: none;
@@ -234,9 +229,7 @@
     font-weight: 600;
     color: #4340D8;
   }
-  .cardd{
-    height: 420px;
-  }
+
 }
 /* SM */
 @media (min-width:576px) and (max-width:767px) {
@@ -246,9 +239,7 @@
     font-weight: 600;
     color: #4340D8;
   }
-  .cardd{
-    height: 440px;
-  }
+
 }
 /* XS */
 @media (max-width:575px) {
@@ -258,8 +249,6 @@
     font-weight: 600;
     color: #4340D8;
   }
-  .cardd{
-    height: 440px;
-  }
+
 }
   
