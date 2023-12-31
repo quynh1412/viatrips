@@ -603,6 +603,7 @@ button.chatbox-open {
   cursor: pointer;
   margin: 16px;
   z-index: 99999;
+  background-color: #4340d8;
 }
 .tickxanh {
   margin-top: 4px;

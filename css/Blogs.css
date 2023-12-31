@@ -57,6 +57,8 @@
 .breadcrumb-item.active > a {
   color: #8F97A3;
 }
+
+
 /* Title Announcement */
 .title-Blogdetail h2{
     justify-content: center;
@@ -77,6 +79,7 @@
     margin-right: 168px;
     float: right;
 }
+
 .underline-titleExplore-Blogdetail {
     width: 40px;
     height: 4px;
@@ -157,9 +160,7 @@
   font-weight: 600;
   color: #4340D8;
 }
-#titleExplore{
-  margin-top: 0px;
-}
+
 /* Content Explore */
 .TitleExplore-Blog h1{
   font-size: 20px;
@@ -252,7 +253,9 @@ color:black;
 }
 /* XL */
 @media (min-width:1200px) {
-
+  .title-container{
+    margin-top: 24px!important;
+  }
 }
 /* LG */
 @media (min-width:992px) and (max-width:1199px) {
@@ -271,6 +274,9 @@ color:black;
     font-weight: 500;
     margin-bottom: 0px;
     min-height: 88px;
+  }
+  .title-container{
+    margin-top: 24px!important;
   }
 }
 /* MD */
@@ -300,6 +306,9 @@ color:black;
     margin-bottom: 0px;
     min-height: 88px;
   }
+  .title-container{
+    margin-top: 16px!important;
+  }
 }
 /* SM */
 @media (min-width:576px) and (max-width:767px) {
@@ -323,6 +332,9 @@ color:black;
     margin-top: -70px;
     margin-left: 18px;
     position: absolute;
+  }
+  .title-container{
+    margin-top: 8px!important;
   }
 }
 
@@ -358,6 +370,8 @@ color:black;
     margin-bottom: 0px;
     min-height: 72px;
   }
-  
+  .title-container{
+    margin-top: 8px!important;
+  }
 }
   
