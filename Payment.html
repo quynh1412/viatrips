@@ -7,9 +7,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="./css/bootstrap.min.css"/>
 
   <!-- link css -->
   <link rel="stylesheet" href="css/index.css" />
@@ -18,9 +17,9 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="js/bootstrap-4.4.1.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
 
   <!-- js navbar -->
   <script>
@@ -262,7 +261,7 @@
   <!--BANNER-->
     <div class="container-fluid" id="banner1">  
         <div class="row justify-content-center" id="logo-term">
-            <img src="imgs/imgs-Payment/Logo-Term.png" alt="" class="img-fluid">
+            <img src="imgs/Logo-Term.png" alt="" class="img-fluid">
         </div>     
     </div>
 <!------------------------------Breadcrumb------------------------------>
@@ -361,15 +360,15 @@
         </div>
         <div class="d-flex align-items-center gender-select">
           <div class="custom-control custom-radio">
-            <input id="male" name="gender" class="custom-control-input" />
+            <input type="radio" id="male" name="gender" class="custom-control-input" />
             <label class="custom-control-label" for="male" id="labelgender">Male</label>
           </div>
           <div class="custom-control custom-radio">
-            <input id="female" name="gender" class="custom-control-input" />
+            <input type="radio" id="female" name="gender" class="custom-control-input" />
             <label class="custom-control-label" for="female" id="labelgender">Female</label>
           </div>
           <div class="custom-control custom-radio">
-            <input id="other" name="gender" class="custom-control-input" />
+            <input type="radio" id="other" name="gender" class="custom-control-input" />
             <label class="custom-control-label" for="other" id="labelgender">Other</label>
           </div>
         </div>
@@ -418,9 +417,7 @@
         <div class="form-control1" id="inputFirstname"> 660/29 Le Dai Hanh, P.12, Q.11, TP.HCM
       </div>
         </div>
-        <button type="button" class="btn btn-primary primary-button border-0 w-100 submit-btn">
-          Confirm
-        </button>
+
       </div>
       </div>
                     <!--product-->
@@ -478,9 +475,10 @@
               <span class="total-price">1219,48$</span>
             </div>
           </div>
-          <div class="clock-container d-flex align-items-center justify-content-between">
-            This link will close in:
-            <div class="clock" id="clock">00 : 00 : 00</div>
+          <div class="clock-container">
+            <div class="clock-title">This link will close in:</div>
+            <div class="clock" id="clock">
+              00 : 00 : 00</div>
           </div>
             </div>
       </div>
@@ -537,7 +535,7 @@
                 Pay with
             </div>
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 paycard">
-                <img src="imgs/imgs-Payment/Payment-Card.png" class="img-fluid">
+                <img src="imgs/Payment-Card.png" class="img-fluid">
             </div>
         </div>
         <div>
@@ -577,12 +575,12 @@
                 <option value="Spain">Spain</option>
                 <option value="Canada">Canada</option>
             </select>
-            <form action="/action_page.php">
-                <label for="vehicle1" class="custom-checkbox">
-                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                  <span>Save my payment methods</span>
+            <div class="row m-0 receive-news mt-2">
+                <input type="checkbox" checked="checked" class="checkbox " />
+                <span class="checkmark"></span>
+                  <span class="ml-1">Save my payment methods</span>
                 </label>
-              </form>
+            </div>
               <div class="row justify-content-center">
                 <div class="col-12 flex-column">
                 <a href="ThankYou.html" alt=""><button class="btn btn-primary primary-button border-0 w-100 payment-btn">
@@ -614,7 +612,7 @@
               Pay with
           </div>
           <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 paycard">
-              <img src="imgs/imgs-Payment/Payment-Card2.png" class="img-fluid">
+              <img src="imgs/Payment-Card2.png" class="img-fluid">
           </div>
       </div>
       <div>
@@ -636,7 +634,7 @@
   <div class="labelcontactus-FAQs">
     <div> Scan QR code to pay:</div>
     <div class="row justify-content-center">
-    <img class="imgqr" src="imgs/imgs-Payment/Payment-QRCode.png" class="img-fluid">
+    <img class="imgqr" src="imgs/Payment-QRCode.png" class="img-fluid">
   </div>
 
 
@@ -679,160 +677,159 @@
 
 
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="d-md-none">
-    <div id="footerCollapse">
-      <div class="card">
-        <div class="card-header" id="AboutViatrips">
-          <button class="header-btn collapsed" data-toggle="collapse" data-target="#aboutViatrips"
-            aria-expanded="true" aria-controls="aboutViatrips">
-            About Viatrips
-          </button>
-        </div>
 
-        <div id="aboutViatrips" class="collapse" aria-labelledby="AboutViatrips" data-parent="#footerCollapse">
-          <div class="card-body">
-            <ul class="footer-link-items">
-              <li><a href="#">Our Story</a></li>
-              <li><a href="carrer.html">Carrers</a></li>
-              <li><a href="AboutUs.html">About us</a></li>
-              <li><a href="#">Contact us</a></li>
-            </ul>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="d-md-none">
+      <div id="footerCollapse">
+        <div class="card">
+          <div class="card-header" id="AboutViatrips">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#aboutViatrips"
+              aria-expanded="true" aria-controls="aboutViatrips">
+              About Viatrips
+            </button>
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingExplore">
-          <button class="header-btn collapsed" data-toggle="collapse" data-target="#explore" aria-expanded="true"
-            aria-controls="explore">
-            Explore
-          </button>
-        </div>
-        <div id="explore" class="collapse" aria-labelledby="headingExplore" data-parent="#footerCollapse">
-          <div class="card-body">
-            <ul class="footer-link-items">
-              <li><a href="#">Airplane ticket</a></li>
-              <li><a href="#">Hotel</a></li>
-              <li><a href="#">Tour</a></li>
-              <li><a href="#">Group booking</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingInformation">
-          <button class="header-btn collapsed" data-toggle="collapse" data-target="#information" aria-expanded="true"
-            aria-controls="information">
-            Information
-          </button>
-        </div>
-        <div id="information" class="collapse" aria-labelledby="headingInformation" data-parent="#footerCollapse">
-          <div class="card-body">
-            <ul class="footer-link-items">
-              <li><a href="#">Tour booking policy</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="TermsOfUse.html">Terms of Use</a></li>
-              <li><a href="FAQs.html">FAQs</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="d-none d-md-block col-4 col-md-3 col-lg-2">
-        <h4 class="footer-title">About Viatrips</h4>
-        <ul class="footer-link-items">
-          <li><a href="#">Our Story</a></li>
-          <li><a href="carreer.html">Carrers</a></li>
-          <li><a href="AboutUs.html">About us</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
-      </div>
-      <div class="d-none d-md-block col-4 col-md-3 col-lg-2">
-        <h4 class="footer-title">Explore</h4>
-        <ul class="footer-link-items">
-          <li><a href="#">Airplane ticket</a></li>
-          <li><a href="#">Hotel</a></li>
-          <li><a href="#">Tour</a></li>
-          <li><a href="#">Group booking</a></li>
-        </ul>
-      </div>
-      <div class="d-none d-md-block col-4 col-md-3 col-lg-2">
-        <h4 class="footer-title">Information</h4>
-        <ul class="footer-link-items">
-          <li><a href="#">Tour booking policy</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="TermsOfUse.html">Terms of Use</a></li>
-          <li><a href="FAQs.html">FAQs</a></li>
-        </ul>
-      </div>
-      <div class="d-none d-md-block col-5 col-md-3 col-lg-2 social-section">
-        <h4 class="footer-title">Social media</h4>
-        <div class="d-flex">
-          <a href="#"><span class="icon-facebook social-icon"></span></a>
-          <a href="#"><span class="icon-instagram social-icon"></span></a>
-          <a href="#"><span class="icon-youtube social-icon"></span></a>
-        </div>
-        <div class="d-flex">
-          <a href="#"><span class="icon-discord social-icon"></span></a>
-          <a href="#"><span class="icon-tiktok social-icon"></span></a>
-          <a href="#"><span class="icon-twitter social-icon"></span></a>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4">
-        <div class="row">
-          <div class="col-5 d-block d-md-none social-section">
-            <div class="d-flex flex-wrap">
-              <a href="#"><span class="icon-facebook social-icon"></span></a>
-              <a href="#"><span class="icon-instagram social-icon"></span></a>
-              <a href="#"><span class="icon-youtube social-icon"></span></a>
-            </div>
-            <div class="d-flex flex-wrap">
-              <a href="#"><span class="icon-discord social-icon"></span></a>
-              <a href="#"><span class="icon-tiktok social-icon"></span></a>
-              <a href="#"><span class="icon-twitter social-icon"></span></a>
+
+          <div id="aboutViatrips" class="collapse" aria-labelledby="AboutViatrips" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
             </div>
           </div>
-          <div class="col-7 col-md-6 col-lg-12">
-            <h4 class="footer-title">Payment</h4>
-            <div class="d-flex flex-wrap">
-              <img src="imgs/visa.svg" class="payment-icon mb-md-0" />
-              <img src="imgs/paypal.svg" class="payment-icon mb-md-0" />
-              <img src="imgs/applepay.svg" class="payment-icon mb-md-0" />
-              <img src="imgs/vnpay.svg" class="payment-icon mb-md-0" />
-              <img src="imgs/samsungpay.svg" class="payment-icon mb-md-0" />
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingExplore">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#explore" aria-expanded="true"
+              aria-controls="explore">
+              Explore
+            </button>
+          </div>
+          <div id="explore" class="collapse" aria-labelledby="headingExplore" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Airplane ticket</a></li>
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Group booking</a></li>
+              </ul>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-12">
-            <div class="input-group email-address">
-              <input placeholder="Enter Email Address" class="form-control email-input" />
-              <span class="input-group-append right-icon-container">
-                <button class="btn border-0 text-white send-btn" type="button">
-                  <span class="icon-send send-icon"></span>
-                </button>
-              </span>
-            </div>
-            <div class="receive-news mt-2">
-              <input type="checkbox" checked="checked" class="checkbox" />
-              <span class="checkmark"></span>
-              Yes, i want to receive news and products emails. Please read
-              our
-              <a href="#">privacy policy.</a>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingInformation">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#information" aria-expanded="true"
+              aria-controls="information">
+              Information
+            </button>
+          </div>
+          <div id="information" class="collapse" aria-labelledby="headingInformation" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Booking policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="TermsOfUse.html">Terms of Use</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <hr />
-  <div class="copyright text-center">
-    Copyright © 2023 Viatrips. All rights reserved.
-  </div>
-</footer>
-<!-- Footer -->
+    <div class="container">
+      <div class="row">
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">About Viatrips</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="AboutUs.html">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Airplane ticket</a></li>
+            <li><a href="#">Hotel</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Group booking</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">Information</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Booking policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="TermsOfUse.html">Terms of Use</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-5 col-md-3 col-lg-2 social-section ">
+          <h4 class="footer-title">Social media</h4>
+          <div class="d-flex">
+            <a href="#"><span class="icon-facebook social-icon"></span></a>
+            <a href="#"><span class="icon-instagram social-icon"></span></a>
+            <a href="#"><span class="icon-youtube social-icon"></span></a>
+          </div>
+          <div class="d-flex">
+            <a href="#"><span class="icon-discord social-icon"></span></a>
+            <a href="#"><span class="icon-tiktok social-icon"></span></a>
+            <a href="#"><span class="icon-twitter social-icon"></span></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-5 d-block d-md-none social-section ">
+              <div class="d-flex flex-wrap">
+                <a href="#"><span class="icon-facebook social-icon"></span></a>
+                <a href="#"><span class="icon-instagram social-icon"></span></a>
+                <a href="#"><span class="icon-youtube social-icon"></span></a>
+              </div>
+              <div class="d-flex flex-wrap">
+                <a href="#"><span class="icon-discord social-icon"></span></a>
+                <a href="#"><span class="icon-tiktok social-icon"></span></a>
+                <a href="#"><span class="icon-twitter social-icon"></span></a>
+              </div>
+            </div>
+            <div class="col-7 col-md-6 col-lg-12 ">
+              <h4 class="footer-title">Payment</h4>
+              <div class="d-flex flex-wrap">
+                <img src="imgs/visa.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/paypal.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/applepay.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/vnpay.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/samsungpay.svg" class="payment-icon mb-md-0" />
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12 ">
+              <div class="input-group email-address">
+                <input placeholder="Enter Email Address" class="form-control email-input" />
+                <span class="input-group-append right-icon-container">
+                  <button class="btn border-0 text-white send-btn" type="button">
+                    <span class="icon-send send-icon"></span>
+                  </button>
+                </span>
+              </div>
+              <div class="receive-news mt-2">
+                <input type="checkbox" checked="checked" class="checkbox" />
+                Yes, i want to receive news and products emails. Please read our
+                <a href="#">privacy policy.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="copyright text-center">
+      Copyright © 2023 Viatrips. All rights reserved.
+    </div>
+  </footer>
+  <!-- Footer -->
 
 <!-- chatbox -->
 <button class="chatbox-open">

@@ -405,7 +405,13 @@ body {
   text-align: center;
   background-color: #4340d8;
 }
-
+.form-control{
+  border-radius: 8px;
+  border: 1px solid #4340d8;
+}
+.form-control:focus{
+  border-color: rgba(0, 0, 0, 0)!important;
+}
 .copyright {
   font-size: 16px;
   font-weight: 500;
