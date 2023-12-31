@@ -9,7 +9,7 @@
 
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
 
   <!-- link css -->
   <link rel="stylesheet" href="./css/index.css" />
@@ -49,35 +49,35 @@
         }
       });
     });
-  </script>  <!-- js navbar -->
+  </script> <!-- js navbar -->
   <script>
     $(function () {
-  
-  var activeIndex = $('.active-tab').index(),
-    $contentlis = $('.tabs-content li'),
-    $tabslis = $('.tabs li');
-  
-  // Show content of active tab on loads
-  $contentlis.eq(activeIndex).show();
-  
-  $('.tabs').on('click', 'li', function (e) {
-  var $current = $(e.currentTarget),
-      index = $current.index();
-  
-  $tabslis.removeClass('active-tab');
-  $current.addClass('active-tab');
-  $contentlis.hide().eq(index).show();
-  });
-  });
+
+      var activeIndex = $('.active-tab').index(),
+        $contentlis = $('.tabs-content li'),
+        $tabslis = $('.tabs li');
+
+      // Show content of active tab on loads
+      $contentlis.eq(activeIndex).show();
+
+      $('.tabs').on('click', 'li', function (e) {
+        var $current = $(e.currentTarget),
+          index = $current.index();
+
+        $tabslis.removeClass('active-tab');
+        $current.addClass('active-tab');
+        $contentlis.hide().eq(index).show();
+      });
+    });
   </script>
-  
+
 </head>
 
 <body>
-    <!-- TOP BTN -->
-    <button id="scroll-to-top" title="Go to top"><span class="icon-top-btn"></span></button>
-    <!-- topbtn -->
- 
+  <!-- TOP BTN -->
+  <button id="scroll-to-top" title="Go to top"><span class="icon-top-btn"></span></button>
+  <!-- topbtn -->
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top navbar-container">
     <div class="container">
@@ -160,20 +160,20 @@
   </div>
 
   <!-- Breakcrum -->
-<nav aria-label="breadcrumb" class="my-3">
-  <div class="container breadcrumb-container">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="Home.html"><span class="icon-home breadcrumb-icon"></span></a>
-      </li>
-      <li class="breadcrumb-item active" aria-current="page">
-        Planning
-      </li>
-    </ol>
-  </div>
-</nav>
-   <!-- Title Blog Recommend-->
-   <div class="container title-container">
+  <nav aria-label="breadcrumb" class="my-3">
+    <div class="container breadcrumb-container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="Home.html"><span class="icon-home breadcrumb-icon"></span></a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Planning
+        </li>
+      </ol>
+    </div>
+  </nav>
+  <!-- Title Blog Recommend-->
+  <div class="container title-container">
     <div class="d-flex title-index">
       <h2>Planning</h2>
       <div class="underline-title"></div>
@@ -181,29 +181,29 @@
   </div>
 
   <!-- BANNER 1 Plan-->
-<div class="container-fluid" id="banner1-Blogdetail">
+  <div class="container-fluid" id="banner1-Blogdetail">
     <div class="container banner1">
       <img src="imgs/imgs-Plan/Banner Plan(2).png" alt="banner1-detail">
     </div>
     <div class="container bg-detail">
-        <div class="row ContentDetail ">
-            <div class="col-12">
-                <h1>Detail Quy Nhon Tour</h1>
-                <p>Vietravel Airlines round-trip airfare + Standard Room + Breakfast</p>
-                <p>Standard Tour - 1 PM - 1:00 PM</p>
-                <p>Saturday, December 7, 2023 | 1:00 PM</p>
-                <p>2 Adults × $56.05</p>
-            </div>
+      <div class="row ContentDetail ">
+        <div class="col-12">
+          <h1>Detail Quy Nhon Tour</h1>
+          <p>Vietravel Airlines round-trip airfare + Standard Room + Breakfast</p>
+          <p>Standard Tour - 1 PM - 1:00 PM</p>
+          <p>Saturday, December 7, 2023 | 1:00 PM</p>
+          <p>2 Adults × $56.05</p>
         </div>
+      </div>
     </div>
-    </div> <!-- BANNER Plan-->
+  </div> <!-- BANNER Plan-->
   <!-- Tab -->
   <div class="container tab">
     <ul class="tabs">
-      <li class="active-tab">Saves</li>
+      <li class="active-tab mr-3">Saves</li>
       <li>Itinenary</li>
     </ul>
-    
+
     <ul class="tabs-content">
       <li>0 items</li>
       <li>Nothing saved yet! When you save an item, you can add it here.</li>
@@ -211,13 +211,14 @@
   </div>
   <!-- Popup -->
   <!-- Button to Open the Modal -->
-  
+
   <div class="container">
     <div class="row">
-      <div class="col-xl-4 offset-xl-8 col-lg-5 offset-lg-7 col-md-7 offset-md-6 col-sm-10 offset-sm-4 col-12 offset-1">
+      <div
+        class="col-xl-6 offset-xl-6 col-lg-6 offset-lg-6 col-md-8 offset-md-4 col-sm-12 col-12 d-flex justify-content-center ">
 
-        <a href="" class="btn btn-primary" id="reminder" >Schedule Reminder</a>
-        <button type="button" class="btn btn-primary " id="Reminder" data-toggle="modal" data-target="#myModal">
+        <a href="#" class="btn btn-primary mr-4" id="reminder">Schedule Reminder</a>
+        <button type="button" class="btn btn-primary " id="Create" data-toggle="modal" data-target="#myModal">
           Create your own trip
         </button>
       </div>
@@ -225,267 +226,286 @@
   </div>
 
 
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content-plan">
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content-plan">
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title-plan">Edit trip details</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title-plan">Edit trip details</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <!-- NAME -->
+          <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+            <label> Trip Name</label>
+            <input type="text" name="name" class="form-control" ng-model="user.name" required>
+          </div>
+          <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+            <label> Destination</label>
+            <input type="text" name="name" class="form-control" ng-model="user.name" required
+              placeholder="Your destination">
+          </div>
+          <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+            <label>Time</label>
+            <input type="text" name="name" class="form-control-plan" ng-model="user.name" required
+              placeholder="mm/dd/yyyy">
+          </div>
+
+
+          <!-- For Demo Purpose -->
+
+          <div class="calendar shadow bg-white p-5">
+            <div class="d-flex align-items-center calendarpopup"><i class="fa fa-calendar fa-3x mr-3"></i>
+              <h2 class="month font-weight-bold mb-0 text-uppercase">April 1, 2023</h2>
+            </div>
+            <ol class="day-names list-unstyled">
+              <li class="font-weight-bold text-uppercase">Sun</li>
+              <li class="font-weight-bold text-uppercase">Mon</li>
+              <li class="font-weight-bold text-uppercase">Tue</li>
+              <li class="font-weight-bold text-uppercase">Wed</li>
+              <li class="font-weight-bold text-uppercase">Thu</li>
+              <li class="font-weight-bold text-uppercase">Fri</li>
+              <li class="font-weight-bold text-uppercase">Sat</li>
+
+            </ol>
+
+            <ol class="days list-unstyled">
+              <li>
+                <div class="date">1</div>
+
+              </li>
+              <li>
+                <div class="date">2</div>
+              </li>
+              <li>
+                <div class="date">3</div>
+              </li>
+              <li>
+                <div class="date">4</div>
+              </li>
+              <li>
+                <div class="date">5</div>
+              </li>
+              <li>
+                <div class="date">6</div>
+              </li>
+              <li>
+                <div class="date">7</div>
+              </li>
+              <li>
+                <div class="date">8</div>
+              </li>
+              <li>
+                <div class="date">9</div>
+              </li>
+              <li>
+                <div class="date">10</div>
+              </li>
+              <li>
+                <div class="date">11</div>
+              </li>
+              <li>
+                <div class="date">12</div>
+              </li>
+              <li>
+                <div class="date">13</div>
+
+              </li>
+              <li>
+                <div class="date">14</div>
+              </li>
+              <li>
+                <div class="date">15</div>
+
+              </li>
+              <li>
+                <div class="date">16</div>
+              </li>
+              <li>
+                <div class="date">17</div>
+              </li>
+              <li>
+                <div class="date">18</div>
+              </li>
+              <li>
+                <div class="date">19</div>
+              </li>
+              <li>
+                <div class="date">20</div>
+              </li>
+              <li>
+                <div class="date">21</div>
+
+              </li>
+              <li>
+                <div class="date">22</div>
+
+              </li>
+              <li>
+                <div class="date">23</div>
+              </li>
+              <li>
+                <div class="date">24</div>
+              </li>
+              <li>
+                <div class="date">25</div>
+              </li>
+              <li>
+                <div class="date">26</div>
+              </li>
+              <li>
+                <div class="date">27</div>
+              </li>
+              <li>
+                <div class="date">28</div>
+              </li>
+              <li>
+                <div class="date">29</div>
+              </li>
+              <li>
+                <div class="date">30</div>
+              </li>
+              <li>
+                <div class="date">31</div>
+              </li>
+              <li class="outside">
+                <div class="date">1</div>
+              </li>
+              <li class="outside">
+                <div class="date">2</div>
+              </li>
+              <li class="outside">
+                <div class="date">3</div>
+              </li>
+              <li class="outside">
+                <div class="date">4</div>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger buttoncreate" data-dismiss="modal">Create</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Title Blog Recommend-->
+  <div class="container title-container">
+    <div class="d-flex title-index">
+      <h2>Hot Plan</h2>
+      <div class="underline-title"></div>
+    </div>
+  </div>
+  <!-- Content Hot Plan -->
+  <div class="container ">
+    <div class="row imgHotplan">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 imghotplan">
+        <img src="imgs/imgs-Plan/VUNGTAUTOUR(1).png" alt="#" class="img-fluid">
+        <div class="content-hotplan">
+        <h1 id="location">VUNG TAU TOUR</h1>
+        <div class="d-none d-sm-block">
+        <span class="icon-calendar iconlich"></span>
+        <span id="contentlocation">Dec 7</span>
+        <span class="icon-location iconlich2"></span>
+        <span id="contentlocation">Phu Quoc</span>
+      </div>
+      </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 imghotplan">
+        <img src="imgs/imgs-Plan/PHUQUOCTOUR(1).png" alt="#" class="img-fluid">
+        <div class="content-hotplan">
+        <h1 id="location">PHU QUOC TOUR</h1>
+        <div class="d-none d-sm-block">
+        <span class="icon-calendar iconlich"></span>
+        <span id="contentlocation">Jan 7</span>
+        <span class="icon-location iconlich2"></span>
+        <span id="contentlocation">Vinwonder</span>
+      </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 d-none d-md-block imghotplan">
+        <img src="imgs/imgs-Plan/HUETOUR(1).png" alt="#" class="img-fluid">
+        <div class="content-hotplan">
+        <h1 id="location">HUE TOUR</h1>
+        <span class="icon-calendar iconlich"></span>
+        <span id="contentlocation">Jun 7</span>
+        <span class="icon-location iconlich2"></span>
+        <span id="contentlocation">Hue</span>
+      </div>
       </div>
 
-      <!-- Modal body -->
-      <div class="modal-body">
-         <!-- NAME -->
-      <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
-          <label> Trip Name</label>
-          <input type="text" name="name" class="form-control" ng-model="user.name" required>
-      </div>
-      <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
-        <label> Destination</label>
-        <input type="text" name="name" class="form-control" ng-model="user.name" required placeholder="Your destination">
     </div>
-    <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
-      <label>Time</label>
-      <input type="text" name="name" class="form-control-plan" ng-model="user.name" required placeholder="mm/dd/yyyy">
-  </div>
 
-
-  <!-- For Demo Purpose -->
-
-  <div class="calendar shadow bg-white p-5">
-    <div class="d-flex align-items-center calendarpopup"><i class="fa fa-calendar fa-3x mr-3"></i>
-      <h2 class="month font-weight-bold mb-0 text-uppercase">April 1, 2023</h2>
-    </div>
-    <ol class="day-names list-unstyled">
-      <li class="font-weight-bold text-uppercase">Sun</li>
-      <li class="font-weight-bold text-uppercase">Mon</li>
-      <li class="font-weight-bold text-uppercase">Tue</li>
-      <li class="font-weight-bold text-uppercase">Wed</li>
-      <li class="font-weight-bold text-uppercase">Thu</li>
-      <li class="font-weight-bold text-uppercase">Fri</li>
-      <li class="font-weight-bold text-uppercase">Sat</li>
-      
-    </ol>
-
-    <ol class="days list-unstyled">
-      <li>
-        <div class="date">1</div>
-       
-      </li>
-      <li>
-        <div class="date">2</div>
-      </li>
-      <li>
-        <div class="date">3</div>
-      </li>
-      <li>
-        <div class="date">4</div>
-      </li>
-      <li>
-        <div class="date">5</div>
-      </li>
-      <li>
-        <div class="date">6</div>
-      </li>
-      <li>
-        <div class="date">7</div>
-      </li>
-      <li>
-        <div class="date">8</div>
-      </li>
-      <li>
-        <div class="date">9</div>
-      </li>
-      <li>
-        <div class="date">10</div>
-      </li>
-      <li>
-        <div class="date">11</div>
-      </li>
-      <li>
-        <div class="date">12</div>
-      </li>
-      <li>
-        <div class="date">13</div>
-        
-      </li>
-      <li>
-        <div class="date">14</div>
-      </li>
-      <li>
-        <div class="date">15</div>
-       
-      </li>
-      <li>
-        <div class="date">16</div>
-      </li>
-      <li>
-        <div class="date">17</div>
-      </li>
-      <li>
-        <div class="date">18</div>
-      </li>
-      <li>
-        <div class="date">19</div>
-      </li>
-      <li>
-        <div class="date">20</div>
-      </li>
-      <li>
-        <div class="date">21</div>
-        
-      </li>
-      <li>
-        <div class="date">22</div>
-       
-      </li>
-      <li>
-        <div class="date">23</div>
-      </li>
-      <li>
-        <div class="date">24</div>
-      </li>
-      <li>
-        <div class="date">25</div>
-      </li>
-      <li>
-        <div class="date">26</div>
-      </li>
-      <li>
-        <div class="date">27</div>
-      </li>
-      <li>
-        <div class="date">28</div>
-      </li>
-      <li>
-        <div class="date">29</div>
-      </li>
-      <li>
-        <div class="date">30</div>
-      </li>
-      <li>
-        <div class="date">31</div>
-      </li>
-      <li class="outside">
-        <div class="date">1</div>
-      </li>
-      <li class="outside">
-        <div class="date">2</div>
-      </li>
-      <li class="outside">
-        <div class="date">3</div>
-      </li>
-      <li class="outside">
-        <div class="date">4</div>
-      </li>
-    </ol>
-  </div>
-</div>
-      
-
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger buttoncreate" data-dismiss="modal">Create</button>
-      </div>
-    </div>
-  </div>
-</div>
-
- <!-- Title Blog Recommend-->
- <div class="container title-container">
-  <div class="d-flex title-index">
-    <h2>Hot Plan</h2>
-    <div class="underline-title"></div>
-  </div>
-</div>
-<!-- Content Hot Plan -->
-<div class="container ">
-  <div class="row imgHotplan">
-    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 imghotplan">
-      <img src="imgs/imgs-Plan/VUNGTAUTOUR(1).png" alt="#" class="img-fluid">
-      <h1 id="location">VUNG TAU TOUR</h1>
-      <span class="icon-calendar iconlich"></span>
-      <span id="contentlocation">Dec 7</span>
-      <span class="icon-location iconlich"></span>
-      <span id="contentlocation">Phu Quoc</span>
-    </div>
-    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 imghotplan">
-      <img src="imgs/imgs-Plan/PHUQUOCTOUR(1).png" alt="#" class="img-fluid">
-      <h1 id="location">PHU QUOC TOUR</h1>
-      <span class="icon-calendar iconlich"></span>
-      <span id="contentlocation">Jan 7</span>
-      <span class="icon-location iconlich"></span>
-      <span id="contentlocation">Grandwonder</span>
-    </div>
-    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-none d-lg-block imghotplan">
-      <img src="imgs/imgs-Plan/HUETOUR(1).png" alt="#" class="img-fluid">
-      <h1 id="location">HUE TOUR</h1>
-      <span class="icon-calendar iconlich"></span>
-      <span id="contentlocation">Jun 7</span>
-      <span class="icon-location iconlich"></span>
-      <span id="contentlocation">Thua Thien Hue</span>
-    </div>
-    
-  </div>
-</div>
-   <!-- Button -->
-   <div class="show-all mt-4 d-flex justify-content-center">
-    <button
-      type="button"
-      class="btn btn-outline-primary primary-button d-flex">
+  <!-- Button -->
+  <div class="show-all mt-4 d-flex justify-content-center">
+    <button type="button" class="btn btn-outline-primary primary-button d-flex">
       Show all
       <span class="icon-arrowline-right show-all-icon"></span>
     </button>
   </div>
- <!-- Title Blog Recommend-->
- <div class="container title-container">
-  <div class="d-flex title-index">
-    <h2>Suggested By Viatrips</h2>
-    <div class="underline-title"></div>
-  </div>
 </div>
-<!-- Content Hot Plan -->
-<div class="container ">
-  <div class="row imgHotplan">
-    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 imghotplan">
-      <img src="imgs/imgs-Plan/TAYNINHTOUR(1).png" alt="#" class="img-fluid">
-      <h1 id="location">TAY NINH TOUR</h1>
-      <span class="icon-calendar iconlich"></span>
-      <span id="contentlocation">July 8</span>
-      <span class="icon-location iconlich"></span>
-      <span id="contentlocation">Nui Ba Den</span>
-    </div>
-    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 imghotplan">
-      <img src="imgs/imgs-Plan/HOIANTOUR(1).png" alt="#" class="img-fluid">
-      <h1 id="location">HOI AN TOUR</h1>
-      <span class="icon-calendar iconlich"></span>
-      <span id="contentlocation">Jan 24</span>
-      <span class="icon-location iconlich"></span>
-      <span id="contentlocation">Hoi An Village</span>
-    </div>
-    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-none d-lg-block imghotplan">
-      <img src="imgs/imgs-Plan/SAPATOUR(1).png" alt="#" class="img-fluid">
-      <h1 id="location">SAPA TOUR</h1>
-      <span class="icon-calendar iconlich"></span>
-      <span id="contentlocation">Dec 7</span>
-      <span class="icon-location iconlich"></span>
-      <span id="contentlocation">Terraces</span>
+  <!-- Title Blog Recommend-->
+  <div class="container title-container">
+    <div class="d-flex title-index">
+      <h2>Suggested By Viatrips</h2>
+      <div class="underline-title"></div>
     </div>
   </div>
-</div>
-<!-- Button -->
-<div class="show-all mt-4 d-flex justify-content-center">
-  <button
-    type="button"
-    class="btn btn-outline-primary primary-button d-flex"
-  >
-    Show all
-    <span class="icon-arrowline-right show-all-icon"></span>
-  </button>
+  <!-- Content Hot Plan -->
+  <div class="container ">
+    <div class="row imgHotplan">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 imghotplan">
+        <img src="imgs/imgs-Plan/TAYNINHTOUR(1).png" alt="#" class="img-fluid">
+        <div class="content-hotplan">
+        <h1 id="location">TAY NINH TOUR</h1>
+        <div class="d-none d-sm-block">
+        <span class="icon-calendar iconlich"></span>
+        <span id="contentlocation">July 8</span>
+        <span class="icon-location iconlich2"></span>
+        <span id="contentlocation">Nui Ba Den</span>
+      </div>
+    </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 imghotplan">
+        <img src="imgs/imgs-Plan/HOIANTOUR(1).png" alt="#" class="img-fluid">
+        <div class="content-hotplan">
+        <h1 id="location">HOI AN TOUR</h1>
+        <div class="d-none d-sm-block">
+        <span class="icon-calendar iconlich"></span>
+        <span id="contentlocation">Jan 24</span>
+        <span class="icon-location iconlich2"></span>
+        <span id="contentlocation">Hoi An</span>
+      </div>
+      </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 d-none d-md-block  imghotplan">
+        <img src="imgs/imgs-Plan/SAPATOUR(1).png" alt="#" class="img-fluid">
+        <div class="content-hotplan">
+          <h1 id="location">SAPA TOUR</h1>
+        <span class="icon-calendar iconlich"></span>
+        <span id="contentlocation">Dec 7</span>
+        <span class="icon-location iconlich2"></span>
+        <span id="contentlocation">Terraces</span>
+      </div>
+      </div>
+      </div>
+
+  <!-- Button -->
+  <div class="show-all mt-4 d-flex justify-content-center">
+    <button type="button" class="btn btn-outline-primary primary-button d-flex">
+      Show all
+      <span class="icon-arrowline-right show-all-icon"></span>
+    </button>
+  </div>
 </div>
   <div class="khoangcach"></div>
   <!-- Footer -->
@@ -643,8 +663,8 @@
   <!-- Footer -->
 
 
-   <!-- chatbox -->
-   <button class="chatbox-open">
+  <!-- chatbox -->
+  <button class="chatbox-open">
     <img src="imgs/message.svg" class="img-fluid">
   </button>
   <button class="chatbox-close">
@@ -656,8 +676,8 @@
       </aside>
       <aside style="flex:8">
         <div class="row">
-          <h1 class="chat-box-title mr-2 ml-3">Viatrips</h1> <span class="icon-tick tickxanh"><span class="path1"></span><span
-              class="path2"></span><span class="path3"></span></span>
+          <h1 class="chat-box-title mr-2 ml-3">Viatrips</h1> <span class="icon-tick tickxanh"><span
+              class="path1"></span><span class="path2"></span><span class="path3"></span></span>
         </div>
         <span class="ml-1">Staff (Online)</span>
       </aside>
@@ -667,10 +687,10 @@
     </header>
     <main class="chatbox-popup__main">
       <h5>15:30</h5>
-          <div id="message-chatbox">
-            <span>Hi there!<br>
-              Welcome to Viatrips's services. Please choose your desired departure point?</span>
-          </div>
+      <div id="message-chatbox">
+        <span>Hi there!<br>
+          Welcome to Viatrips's services. Please choose your desired departure point?</span>
+      </div>
       </div>
     </main>
     <footer class="chatbox-popup__footer">
@@ -690,8 +710,8 @@
       </aside>
       <aside style="flex:6">
         <div class="row">
-          <h1 class="chat-box-title mr-2 ml-3">Viatrips</h1> <span class="icon-tick tickxanh"><span class="path1"></span><span
-              class="path2"></span><span class="path3"></span></span>
+          <h1 class="chat-box-title mr-2 ml-3">Viatrips</h1> <span class="icon-tick tickxanh"><span
+              class="path1"></span><span class="path2"></span><span class="path3"></span></span>
         </div>
         <span class="ml-1">Staff (Online)</span>
       </aside>
@@ -707,11 +727,11 @@
           Welcome to Viatrips's services. Please choose your desired departure point?</span>
       </div>
 
-    <div id="message-btn-box">
-      <button class="btn primary-button" id="message-btn">The North</button>
-      <button class="btn primary-button" id="message-btn">The Central</button>
-      <button class="btn primary-button" id="message-btn">The South</button>
-  </div>
+      <div id="message-btn-box">
+        <button class="btn primary-button" id="message-btn">The North</button>
+        <button class="btn primary-button" id="message-btn">The Central</button>
+        <button class="btn primary-button" id="message-btn">The South</button>
+      </div>
     </main>
     <footer class="chatbox-panel__footer">
 
@@ -753,22 +773,22 @@
   </script> <!-- js chatbox -->
 
 
-<!-- js top btn -->
-<script>
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $("#scroll-to-top").fadeIn();
-    } else {
-      $("#scroll-to-top").fadeOut();
-    }
-  });
+  <!-- js top btn -->
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $("#scroll-to-top").fadeIn();
+      } else {
+        $("#scroll-to-top").fadeOut();
+      }
+    });
 
-  $("#scroll-to-top").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 500);
-  });
-</script> <!-- js top btn -->
+    $("#scroll-to-top").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 500);
+    });
+  </script> <!-- js top btn -->
 
-  
+
 </body>
 
 </html>
