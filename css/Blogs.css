@@ -1,18 +1,22 @@
-/* Banner 1 Blog Detail */
-#banner1-Blogdetail {
-    width: 100%;
-    height:auto;
-    margin:0;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
+/* Banner */
+.banner1{
+  padding: 0px;
+  background-image: url("../imgs/imgs-Blogs/bannerfirstblog.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
 }
-#banner1-Blogdetail img {
-    width: 100%; /* Đảm bảo rằng hình ảnh sẽ chiếm toàn bộ chiều rộng của phần tử cha */
-    height: auto; /* Đảm bảo chiều cao tự động điều chỉnh theo tỉ lệ của hình ảnh */
-    max-width: 100%; /* Giữ cho hình ảnh không vượt quá kích thước chiều rộng của phần tử cha */
-    display: block; /* Loại bỏ khoảng trống dưới hình ảnh khi nó là một phần tử inline */
-    margin: 0 auto; /* Canh giữa hình ảnh trong phần tử cha */
+.Contentbanner1product h1{
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  padding-top: 180px;
+}
+.Contentbanner1product p{
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
 }
 /* breadcrumb */
 .breadcrumb-container .breadcrumb {

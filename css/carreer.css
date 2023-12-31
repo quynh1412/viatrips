@@ -1,12 +1,23 @@
 /* Banner */
 .banner1{
   padding: 0px;
-  background-image: url("../imgs/imgs-Carreer/banner-carreer.png");
+  background-image: url("../imgs/imgs-Carreer/banner1\ career.jpg");
   background-size: cover;
   background-position: center;
   position: absolute;
   height: 400px;
   width: 100%;
+}
+.Contentbanner1product h1{
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 180px;
+  color: white;
+}
+.Contentbanner1product p{
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
 }
 /*Search box*/
 #search-fill{

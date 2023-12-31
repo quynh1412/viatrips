@@ -1,20 +1,4 @@
-/* Banner 1 Blog Detail */
-#banner1-About_Us {
-    width: 100%;
-    height:auto;
-    margin:0;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-}
-#banner1-About_Us img {
-    width: 100%; /* Đảm bảo rằng hình ảnh sẽ chiếm toàn bộ chiều rộng của phần tử cha */
-    height: auto; /* Đảm bảo chiều cao tự động điều chỉnh theo tỉ lệ của hình ảnh */
-    max-width: 100%; /* Giữ cho hình ảnh không vượt quá kích thước chiều rộng của phần tử cha */
-    display: block; /* Loại bỏ khoảng trống dưới hình ảnh khi nó là một phần tử inline */
-    margin: 0 auto; /* Canh giữa hình ảnh trong phần tử cha */
-}
-/* breadcum */
+
 /* breadcrumb */
 .breadcrumb-container .breadcrumb {
     background-color: transparent;
@@ -278,7 +262,61 @@
     width: 100%;
     height: auto;
 }
+.banner1 {
+/* The image used */
+  padding: 0px;
+  background-image: url("../imgs/imgs-AboutUs/banner\ About\ Us.png");
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 100%;
+  padding-bottom: 16px;
+}
 
+  .banner1 {
+    padding: 0;
+  }
+  .btnbanner-home {
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 10px 8px;
+    color:white !important;
+    background-color: #4340d8;
+    border: solid 2px #4340d8;
+    width: 100%;
+    flex: 0;
+    transition: all ease .5s;
+  }
+  .btnbanner-home:hover {
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 10px 8px;
+    color:black !important;
+    background-color: #FFCA00;
+    border: solid 2px #FFCA00;
+    width: 100%;
+    flex: 0;
+    transition: all ease .5s;
+  }
+  #TitleFinal {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 24px;
+    color: #4340D8;
+  }
+  
+  #ContentFinal {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 16px;
+    color: black;
+  }
 /* XL */
 @media (min-width:1200px) {
     .btncontactus-FAQs:hover{
@@ -292,9 +330,33 @@
         color: #000000;
         transition: all ease 0.3s;
       }
+      .btnbanner-home:hover {
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 8px;
+        padding: 10px 8px;
+        color: #000000;
+        background-color: #FFCA00;
+        border: solid 2px #FFCA00;
+        width: 100%;
+        flex: 0;
+      }
 }
 /* LG */
 @media (min-width:992px) and (max-width:1199px) {
+    .banner {
+        /* The image used */
+        min-height: 320px;
+        }
+        #TitleFinal {
+            font-size: 32px;
+            line-height: 38px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 40px;
+            margin-bottom: 24px;
+            color: #4340D8;
+          }
     .primary-button:hover {
         background-color: white;
         border: 2px solid #FFCA00;
@@ -362,6 +424,19 @@
 }
 /* MD */
 @media (min-width:768px) and (max-width:991px) {
+    .banner {
+        /* The image used */
+        min-height: 274px;
+        }
+        #TitleFinal {
+            font-size: 32px;
+            line-height: 38px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 40px;
+            margin-bottom: 24px;
+            color: #4340D8;
+          }
     .imgvision-aboutus{
         margin-left: -15px;
         width: 30%;
@@ -437,9 +512,46 @@
         border: 2px solid #4340D8;
         color: #000000;
       }
+      .btnbanner-home {
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 8px;
+        padding: 10px 8px;
+        color:white !important;
+        background-color: #4340d8;
+        border: solid 2px #4340d8;
+        width: 100%;
+        flex: 0;
+        transition: all ease .5s;
+      }
+      .btnbanner-home:hover {
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 8px;
+        padding: 10px 8px;
+        color:white !important;
+        background-color: #4340d8;
+        border: solid 2px #4340d8;
+        width: 100%;
+        flex: 0;
+        transition: all ease .5s;
+      }
 }
 /* SM */
 @media (min-width:576px) and (max-width:767px) {
+    .banner {
+        /* The image used */
+        min-height: 274px;
+        }
+        #TitleFinal {
+            font-size: 32px;
+            line-height: 38px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 20px;
+            margin-bottom: 24px;
+            color: #4340D8;
+          }
     .titleWhoWeAre h2{
         font-size: 20px;
     }
@@ -519,11 +631,52 @@
         border: 2px solid #4340D8;
         color: #000000;
     }
-    
+    .btnbanner-home {
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 8px;
+        padding: 10px 8px;
+        color:white !important;
+        background-color: #4340d8;
+        border: solid 2px #4340d8;
+        width: 100%;
+        flex: 0;
+        transition: all ease .5s;
+      }
+      .btnbanner-home:hover {
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 8px;
+        padding: 10px 8px;
+        color:white !important;
+        background-color: #4340d8;
+        border: solid 2px #4340d8;
+        width: 100%;
+        flex: 0;
+        transition: all ease .5s;
+      }
     
 }
 /* XS */
 @media (max-width:575px) {
+    .banner {
+        /* The image used */
+        min-height: 200px;
+        }
+        #TitleFinal {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 20px;
+            margin-bottom: 8px;
+            color: #4340D8;
+          }
+          #ContentFinal {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 16px;
+            color: black;
+          }
     .titleWhoWeAre h2{
         font-size: 20px;
     }
@@ -605,6 +758,30 @@
         border: 2px solid #4340D8;
         color: #000000;
     }
+    .btnbanner-home {
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 8px;
+        padding: 10px 8px;
+        color:white !important;
+        background-color: #4340d8;
+        border: solid 2px #4340d8;
+        width: 100%;
+        flex: 0;
+        transition: all ease .5s;
+      }
+      .btnbanner-home:hover {
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 8px;
+        padding: 10px 8px;
+        color:white !important;
+        background-color: #4340d8;
+        border: solid 2px #4340d8;
+        width: 100%;
+        flex: 0;
+        transition: all ease .5s;
+      }
 }
   /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
   @media screen and (max-width: 1000px) {

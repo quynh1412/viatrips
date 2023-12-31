@@ -1,12 +1,23 @@
 /* Banner */
 .banner1{
   padding: 0px;
-  background-image: url("../imgs/imgs-Products/banner1-products.png");
+  background-image: url("../imgs/imgs-Products/banner1pd.jpg");
   background-size: cover;
   background-position: center;
   position: absolute;
   height: 400px;
   width: 100%;
+}
+.Contentbanner1product h1{
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 180px;
+  color: white;
+}
+.Contentbanner1product p{
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
 }
 /* right content 1 */
 .tabcontent {
@@ -259,8 +270,8 @@ border-radius: 8px;
   padding-left: 4px;
 }
 #checkbox-filter{
- height: 24px;
- width: 24px;
+ height: 20px;
+ width: 20px;
  border-radius: 8px;
  accent-color:#4340d8;
 }
@@ -270,7 +281,7 @@ border-radius: 8px;
 }
 .PassengerContent p {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
 }
 /* Quantity */
 span {cursor:pointer; }
@@ -351,7 +362,7 @@ padding:0px;
   .slider{
   height: 5px;
   position: relative;
-  background: #ABB1BA;
+  background: #4340D8;
   border-radius: 5px;
   }
   .slider .progress{
@@ -379,9 +390,10 @@ padding:0px;
   height: 17px;
   width: 17px;
   border-radius: 50%;
-  background: #4340D8;
+  background: #2B4F43;
   pointer-events: auto;
   -webkit-appearance: none;
+  box-shadow: 0 0 6px #4340D8;
   }
   input[type="range"]::-moz-range-thumb{
   height: 17px;
