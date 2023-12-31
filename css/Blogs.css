@@ -4,19 +4,19 @@
   background-image: url("../imgs/imgs-Blogs/bannerfirstblog.jpg");
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 300px;
   width: 100%;
 }
 .Contentbanner1product h1{
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
   color: white;
-  padding-top: 180px;
+  padding-top: 90px;
 }
 .Contentbanner1product p{
   font-size: 20px;
   font-weight: 300;
-  color: white;
+  color: #E3E5E8;
 }
 /* breadcrumb */
 .breadcrumb-container .breadcrumb {
@@ -98,13 +98,12 @@
 /* Blog Card */
 .cardd{
   width: 100%;
-  height: 411px;
   background: #fff;
   border-radius: 8px;
   padding: 16px;
   position: relative;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
 
 .card-img-holder{
@@ -253,9 +252,7 @@ color:black;
 }
 /* XL */
 @media (min-width:1200px) {
-  .cardd{
-    height: 430px;
-  }
+
 }
 /* LG */
 @media (min-width:992px) and (max-width:1199px) {
@@ -265,9 +262,7 @@ color:black;
     font-weight: 600;
     color: #4340D8;
   }
-  .cardd{
-    height: 400px;
-  }
+
   .description {
     padding: 8px 0 0 0;
     color: black;
@@ -286,9 +281,7 @@ color:black;
     font-weight: 600;
     color: #4340D8;
   }
-  .cardd{
-    height: 420px;
-  }
+
   .TitleExplore-Blog img {
     margin-top: 24px;
   }
@@ -316,9 +309,7 @@ color:black;
     font-weight: 600;
     color: #4340D8;
   }
-  .cardd{
-    height: 440px;
-  }
+
   .TitleExplore-Blog img {
     margin-top: 8px;
   }
@@ -343,9 +334,7 @@ color:black;
     font-weight: 600;
     color: #4340D8;
   }
-  .cardd{
-    height: 440px;
-  }
+
   .TitleExplore-Blog img {
     margin-top: 8px;
   }
