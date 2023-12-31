@@ -177,6 +177,7 @@
   
   #input-FAQs:focus {
     border: solid 1px #4340d8;
+    box-shadow: 0 0 0 0.2rem rgba(67, 64, 216, 0.25);
   }
   
   #comment-FAQs {
@@ -190,6 +191,8 @@
   
   #comment-FAQs:focus {
     border: solid 1px #4340d8;
+    box-shadow: 0 0 0 0.2rem rgba(67, 64, 216, 0.25);
+
   }
   
   .btncontactus-FAQs {
