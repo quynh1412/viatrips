@@ -194,12 +194,11 @@ width: 100%;
 }
 .buttoncreate{
   font-size: 16px;
-  line-height: 18px;
   font-weight: bold;
-  height: 48px;
   background-color: #4340d8;
   border:none;
   border-radius: 8px;
+  padding: 12px 40px;
 }
 .buttoncreate:hover{
   font-size: 16px;
@@ -251,7 +250,6 @@ width: 100%;
 }
 .bg-white {
   background-color: #fff !important;
-  height: 465px;
 }
 .khoangcach{
   margin-top: 40px;
@@ -461,7 +459,7 @@ width: 100%;
 }
 
 .calendar {
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .month {
@@ -474,7 +472,6 @@ width: 100%;
   }
 }
 .calendarpopup {
-  padding-left: 20%;
   text-align: center;
 }
 .calendarpopup h2{
@@ -543,5 +540,5 @@ width: 100%;
 }
 .calendar .days li {
   border-bottom: 1px solid #eee;
-  height: 70px;
+  height: 60px;
 }
