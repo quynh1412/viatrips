@@ -253,7 +253,7 @@ color:black;
 }
 /* XL */
 @media (min-width:1200px) {
-  .title-container{
+  .exploretitle{
     margin-top: 24px!important;
   }
 }
@@ -275,7 +275,7 @@ color:black;
     margin-bottom: 0px;
     min-height: 88px;
   }
-  .title-container{
+  .exploretitle{
     margin-top: 24px!important;
   }
 }
@@ -333,7 +333,7 @@ color:black;
     margin-left: 18px;
     position: absolute;
   }
-  .title-container{
+  .exploretitle{
     margin-top: 8px!important;
   }
 }
@@ -370,7 +370,7 @@ color:black;
     margin-bottom: 0px;
     min-height: 72px;
   }
-  .title-container{
+  .exploretitle{
     margin-top: 8px!important;
   }
 }
