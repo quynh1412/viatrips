@@ -17,7 +17,25 @@
   text-decoration: none;
 }
 
-
+.form-control{
+  border-radius: 8px;
+  border: 1px solid #d5d8dc;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 16px;
+  transition: all ease 0.5s;
+}
+.input-group-text{
+  border-radius: 8px;
+}
+.form-control:focus{
+  border-color: #4340d8 !important;
+}
+.custom-select{
+  border-radius: 8px;
+}
 .breadcrumb-icon {
   font-size: 24px;
   display: block;
