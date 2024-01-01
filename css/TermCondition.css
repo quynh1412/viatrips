@@ -68,7 +68,7 @@
 }
 /*BANNER 1*/
 #banner1 {
-    background-image: url(../imgs/imgs-TermCondition/Banner1-TermConditions.png);
+    background-image: url(../imgs/Banner1-TermConditions.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
@@ -211,7 +211,7 @@
  }
  #banner2 {
     margin-top: 40px;
-    background-image: url(../imgs/imgs-TermCondition/Banner2-TermConditions.png);
+    background-image: url(../imgs/Banner2-TermConditions.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;

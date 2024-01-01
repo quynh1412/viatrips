@@ -38,13 +38,7 @@
   .breadcrumb-item.active > a {
     color: #8F97A3;
   }
-  /*BANNER 1*/
-  #banner1 {
-      background-image: url(../imgs/imgs-Payment/Banner1-Payment.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 200px;
-  }
+
   #logo-term img {
       vertical-align: center;
       margin-top: 40px;
@@ -354,7 +348,7 @@
 }
 /*BANNER 1*/
 #banner1 {
-    background-image: url(../imgs/imgs-Payment/Banner1-Payment.png);
+    background-image: url(../imgs/Banner1-Payment.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
@@ -1132,7 +1126,7 @@ input:focus {
 /*BANNER 2*/
 #banner2 {
   margin-top: 40px;
-  background-image: url(../imgs/imgs-Payment/Banner2-Payment.png);
+  background-image: url(../imgs/Banner2-Payment.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;

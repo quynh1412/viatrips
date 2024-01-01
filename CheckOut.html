@@ -46,92 +46,58 @@
         }
       });
     });
-    // https://www.w3schools.com/howto/howto_js_countdown.asp
-    // Set the date we're counting down to
-    var addHours = 2 * 60 * 60 * 1000;
-    var countDownDate = new Date().getTime() + addHours;
-
-    // Update the count down every 1 second
-    var x = setInterval(function () {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-
-      // Time calculations for hours, minutes and seconds
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      if (hours < 10) {
-        hours = "0" + hours;
-      }
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      if (minutes < 10) {
-        minutes = "0" + minutes;
-      }
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      if (seconds < 10) {
-        seconds = "0" + seconds;
-      }
-      // Display the result in the element with id="demo"
-      document.getElementById("clock").innerHTML =
-        hours + " : " + minutes + " : " + seconds;
-
-      if (distance < 0) {
-        clearInterval(x);
-      }
-    }, 1000);
-  </script>  <!-- js navbar -->
+  </script> <!-- js navbar -->
 </head>
 
 <body>
    <!-- TOP BTN -->
  <button id="scroll-to-top" title="Go to top"><span class="icon-top-btn"></span></button>
 
- <!-- Navbar -->
- <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top navbar-container">
-   <div class="container">
-     <span class="icon-menu navbar-toggle-icon d-md-none" onclick="openNav()"></span>
-     <a class="navbar-brand navbar-brand-container" href="Home.html"><img src="imgs/logo-viatrips.svg"
-         class="navbar-logo" /></a>
-     <div class="d-none d-md-block mx-auto">
-       <ul class="navbar-nav">
-         <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Tour</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top navbar-container">
+    <div class="container">
+      <span class="icon-menu navbar-toggle-icon d-md-none" onclick="openNav()"></span>
+      <a class="navbar-brand navbar-brand-container" href="Home.html"><img src="imgs/logo-viatrips.svg"
+          class="navbar-logo" /></a>
+      <div class="d-none d-md-block mx-auto">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Tour</a>
 
-           <div class="dropdown-menu">
-             <a class="dropdown-item" href="Detail.html">Spring tour</a>
-             <a class="dropdown-item" href="#">Summer tour</a>
-             <a class="dropdown-item" href="#">Autumn tour</a>
-             <a class="dropdown-item" href="#">Winter tour</a>
-           </div>
-         </li>
-         <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Planning</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="Detail.html">Spring tour</a>
+              <a class="dropdown-item" href="#">Summer tour</a>
+              <a class="dropdown-item" href="#">Autumn tour</a>
+              <a class="dropdown-item" href="#">Winter tour</a>
+              <a class="dropdown-item-showall" href="Product.html">Show all</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Planning</a>
 
-           <div class="dropdown-menu">
-             <a class="dropdown-item" href="Plan.html">Your plan</a>
-             <a class="dropdown-item" href="#">Suggestion</a>
-             <a class="dropdown-item" href="#">Plan a trip</a>
-           </div>
-         </li>
-         <li class="nav-item align-items-center d-flex">
-           <a class="nav-link" href="Mytrip.html">My Trip</a>
-         </li>
-         <li class="nav-item align-items-center d-flex">
-           <a class="nav-link" href="Blog.html">Blogs</a>
-         </li>
-       </ul>
-     </div>
-     <div class="navbar-nav ml-auto ml-md-0">
-       <div class="d-flex justify-content-center">
-         <a class="nav-link" href="Wishlist.html"><span class="icon-favorite navbar-icon"></span></a>
-         <a class="nav-link" href="Login.html"><span class="icon-user navbar-icon"></span></a>
-       </div>
-     </div>
-   </div>
- </nav>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="Plan.html">Your plan</a>
+              <a class="dropdown-item" href="#">Suggestion</a>
+              <a class="dropdown-item" href="#">Plan a trip</a>
+            </div>
+          </li>
+          <li class="nav-item align-items-center d-flex">
+            <a class="nav-link" href="Mytrip.html">My Trip</a>
+          </li>
+          <li class="nav-item align-items-center d-flex">
+            <a class="nav-link" href="Blog.html">Blogs</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-nav ml-auto ml-md-0">
+        <div class="d-flex justify-content-center">
+          <a class="nav-link" href="Wishlist.html"><span class="icon-favorite navbar-icon"></span></a>
+          <a class="nav-link" href="Login.html"><span class="icon-user navbar-icon"></span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   <!-- Sidebar -->
   <div id="overlay" onclick="closeNav()"></div>
   <div class="sidebar" id="sidebarMobile">
@@ -142,10 +108,11 @@
         <div class="dropdown-mobile">
           <a href="javascript:void(0)" class="dropdown-link"><span class="icon-tour sidebar-icon"></span>Tour</a>
           <div class="dropdown-mobile-content">
-            <a href="Detail.html">Spring tour</a>
-            <a href="#">Summer tour</a>
-            <a href="#">Autumn tour</a>
-            <a href="#">Winter tour</a>
+            <a class="dropdown-item-m" href="Detail.html">Spring tour</a>
+            <a class="dropdown-item-m" href="#">Summer tour</a>
+            <a class="dropdown-item-m" href="#">Autumn tour</a>
+            <a class="dropdown-item-m" href="#">Winter tour</a>
+            <a class="dropdown-item-showallm" href="Product.html">Show all</a>
           </div>
         </div>
         <div class="dropdown-mobile">
@@ -154,7 +121,7 @@
           <div class="dropdown-mobile-content">
             <a href="Plan.html">Your plan</a>
             <a href="#">Suggestion</a>
-            <a href="#">Plan a trip</a>
+            <a href="Plan.html">Plan a trip</a>
           </div>
         </div>
 
@@ -166,7 +133,6 @@
         Sign in</a>
     </div>
   </div>
-    <!-- Navbar -->
 
   <!--BANNER-->
     <div class="container-fluid" id="banner1">  
