@@ -526,7 +526,7 @@ input[type="range"]::-moz-range-thumb {
   line-height: 32px;
   font-weight: bold;
   color: #ff3a44;
-  margin-bottom: 0px;
+  margin-bottom: 8px;
 }
 .person {
   font-size: 16px;
