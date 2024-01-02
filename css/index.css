@@ -97,10 +97,10 @@ body {
   font-weight: 300;
 }
 .dropdown-item-showall{
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
   margin-left: 24px;
-  color: #4340d8;
+  color: black;
 }
 .dropdown-mobile .dropdown-link::after {
   content: "\e946";
@@ -172,7 +172,7 @@ body {
 .dropdown-item-showallm{
   font-weight: 500! important;
   font-size: 16px!important;
-  color: #4340d8!important;
+  color: black!important;
   border-top: none!important;
 }
 .sidebar .sidebar-icon {
@@ -476,6 +476,7 @@ body {
   }
   .dropdown-item-showall:hover{
     color: #4340d8;
+    text-decoration: none;
   }
 }
 
@@ -517,6 +518,7 @@ body {
   }
   .dropdown-item-showall:hover{
     color: #4340d8;
+    text-decoration: none;
   }
 }
 
